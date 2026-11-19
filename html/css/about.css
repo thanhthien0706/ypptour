@@ -88,3 +88,32 @@
 @media (prefers-reduced-motion: reduce) {
   .page-about .about-row.reveal .about-img { opacity: 1; transform: none; }
 }
+
+/* ---- Mobile: tiêu đề hero gọn, không để "LỘC" đứng lẻ ---- */
+@media (max-width: 640px) {
+  .page-about .hero-title { font-size: clamp(2.1rem, 10vw, 3.4rem); line-height: 1; }
+  .page-about .hero-title .accent { display: block; }
+}
+
+/* ---- Ảnh người chơi (public domain, U.S. Army / Wikimedia Commons) ---- */
+.page-about .about-img img.img-training { object-position: 68% 30%; }
+.page-about .about-img img.img-match { object-position: 62% 45%; }
+
+/* ---- Hero: ảnh nền người chơi ----
+   Ảnh: "KATUSA Friendship Week - PickleBall (9741911)", U.S. Army photo by Cpl. Eun Ju,
+   Wikimedia Commons, public domain. Lớp phủ navy đặc giữ chữ dễ đọc. */
+.page-about .hero-sm {
+  position: relative;
+  isolation: isolate;
+  background: var(--navy-2) url("../img/hero-about.webp") center 60% / cover no-repeat;
+}
+.page-about .hero-sm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(11, 18, 32, 0.76);
+}
+@media (max-width: 640px) {
+  .page-about .hero-sm { background-image: url("../img/hero-about-sm.webp"); background-position: center 40%; }
+}

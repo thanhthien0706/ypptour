@@ -156,3 +156,45 @@
 @media (prefers-reduced-motion: reduce) {
   .court, .date-btn, .cal-day, .mode label, .btn-book, .btn-ghost { transition: none; }
 }
+
+/* ---- Mobile ---- */
+@media (max-width: 640px) {
+  .page-booking .hero-title { font-size: clamp(2.8rem, 14vw, 4rem); }
+  .mode { display: flex; width: 100%; }
+  .mode label { flex: 1; text-align: center; padding: 10px 6px; font-size: .85rem; text-wrap: balance; }
+  .time-row { flex-wrap: wrap; gap: 12px; }
+  .tfield:not(#dur-field) { flex: 1 1 0; min-width: 0; }
+  .tsel { gap: 4px; }
+  .tfield select { flex: 1; min-width: 0; width: 100%; padding: 12px 24px 12px 10px; background-position: right 8px center; background-size: 12px; font-size: 1rem; }
+  #dur-field { flex: 1 1 100%; }
+  #dur { width: 100%; }
+  .cal { padding: 12px; width: min(340px, calc(100vw - 32px)); }
+  .cal-dow, .cal-grid { gap: 2px; }
+  .cal-nav { width: 44px; height: 44px; }
+  .cal-day { aspect-ratio: auto; min-height: 42px; }
+  .cal-blank { aspect-ratio: auto; }
+  .court { padding: 12px 20px; }
+  .booking-card { padding: 20px 16px; }
+}
+@media (max-width: 360px) {
+  .cal { padding: 8px; }
+}
+
+/* ---- Hero: ảnh nền người chơi trong nhà thi đấu ----
+   Ảnh: "KATUSA Friendship Week - PickleBall (9741917)", U.S. Army photo by Cpl. Eun Ju,
+   Wikimedia Commons, public domain. Lớp phủ navy đặc giữ chữ dễ đọc. */
+.page-booking .hero-sm {
+  position: relative;
+  isolation: isolate;
+  background: var(--navy-2) url("../img/hero-booking.webp") center 58% / cover no-repeat;
+}
+.page-booking .hero-sm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(11, 18, 32, 0.78);
+}
+@media (max-width: 640px) {
+  .page-booking .hero-sm { background-image: url("../img/hero-booking-sm.webp"); }
+}

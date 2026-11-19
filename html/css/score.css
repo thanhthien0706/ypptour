@@ -181,7 +181,7 @@
     padding: 56px 0 40px;
   }
   .page-score .search-bar {
-    top: 109px;
+    top: 0;
   }
   .page-score .top-1 {
     padding: 20px 16px;
@@ -196,5 +196,55 @@
   .page-score .top-2,
   .page-score .top-3 {
     animation: none;
+  }
+}
+
+/* ---- Màn hình hẹp: top 3 xếp lưới để tên có đủ chỗ (không bị cắt "…") ---- */
+@media (max-width: 480px) {
+  .page-score .top-1, .page-score .top-2, .page-score .top-3 {
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    grid-template-areas: "no av name" "no av rating";
+    column-gap: 12px; row-gap: 2px; align-items: center;
+  }
+  .page-score .top-1 .rank-no, .page-score .top-2 .rank-no, .page-score .top-3 .rank-no { grid-area: no; min-width: 0; }
+  .page-score .top-1 .rank-no { font-size: 3rem; }
+  .page-score .top-2 .rank-no, .page-score .top-3 .rank-no { font-size: 2.25rem; }
+  .page-score .top-1 .rank-avatar { grid-area: av; width: 68px; height: 68px; }
+  .page-score .top-2 .rank-avatar, .page-score .top-3 .rank-avatar { grid-area: av; width: 56px; height: 56px; }
+  .page-score .top-1 .rank-name, .page-score .top-2 .rank-name, .page-score .top-3 .rank-name {
+    grid-area: name; align-self: end; white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.15;
+  }
+  .page-score .top-1 .rank-rating, .page-score .top-2 .rank-rating, .page-score .top-3 .rank-rating {
+    grid-area: rating; align-self: start; text-align: left; min-width: 0;
+  }
+  .page-score .top-1 .rank-rating { font-size: 2rem; }
+  .page-score .top-2 .rank-rating, .page-score .top-3 .rank-rating { font-size: 1.5rem; }
+}
+
+/* ---- Mobile: tiêu đề hero "BẢNG XẾP HẠNG" nằm gọn một dòng ---- */
+@media (max-width: 640px) {
+  .page-score .hero-title { font-size: clamp(1.9rem, 9.4vw, 2.7rem); max-width: none; }
+}
+
+/* ---- Hero: ảnh nền pickleball ----
+   Ảnh: "Harry B. Anderson Tennis Center - Pickleball Courts 4-6" của GA Kevin,
+   Wikimedia Commons, CC0 (public domain). Lớp phủ navy đặc giữ chữ dễ đọc. */
+.page-score .hero-sm {
+  position: relative;
+  isolation: isolate;
+  background: var(--navy-2) url("../img/hero-pickleball.webp") center 62% / cover no-repeat;
+}
+.page-score .hero-sm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(11, 18, 32, 0.5);
+}
+@media (max-width: 640px) {
+  .page-score .hero-sm {
+    background-image: url("../img/hero-pickleball-sm.webp");
+    background-position: center 70%;
   }
 }
