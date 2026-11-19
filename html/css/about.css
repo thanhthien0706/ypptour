@@ -1,0 +1,90 @@
+/* ============ About — bolder pass (chỉ áp dụng cho body.page-about) ============
+   Dùng lại ngôn ngữ thương hiệu: Manrope 800 in hoa, gradient cam, navy.
+   Tăng: cỡ chữ hiển thị, nhịp xen kẽ băng nền, ảnh lớn có khung nghiêng. */
+
+.page-about main { overflow-x: clip; }
+
+/* Chọn chữ / thanh cuộn theo bảng màu */
+.page-about ::selection { background: var(--orange); color: var(--navy); }
+.page-about { scrollbar-color: var(--orange) var(--navy); scrollbar-width: thin; }
+
+/* ---- Hero: chữ hiển thị cỡ lớn ---- */
+.page-about .hero-sm { padding: 88px 0 72px; text-align: left; }
+.page-about .hero-title {
+  font-size: clamp(3.4rem, 12vw, 6rem);
+  font-weight: 800; line-height: .92; letter-spacing: -.035em;
+}
+.page-about .hero-sub {
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem); font-weight: 600; color: var(--text);
+  max-width: 34ch; margin: 24px 0 0; text-wrap: balance;
+}
+
+/* ---- Rows: ảnh lớn + tiêu đề lớn ---- */
+.page-about .section { padding: 0 20px; }
+.page-about .about-row {
+  position: relative; isolation: isolate;
+  display: grid; grid-template-columns: 7fr 5fr; gap: clamp(32px, 6vw, 80px);
+  align-items: center; margin: 0; padding: 96px 0;
+}
+.page-about .about-row.reverse { grid-template-columns: 5fr 7fr; }
+.page-about .about-row.reverse .about-img { order: 2; }
+.page-about .about-img, .page-about .about-text { min-width: 0; }
+
+/* Băng nền full-bleed ở các hàng xen kẽ → tạo nhịp lên xuống */
+.page-about .about-row.reverse::before {
+  content: ""; position: absolute; z-index: -2; top: 0; bottom: 0;
+  left: 50%; width: 100vw; margin-left: -50vw;
+  background: var(--navy-2);
+  border-block: 1px solid var(--line);
+}
+
+/* Ảnh: khung gradient nghiêng phía sau, bo góc bất đối xứng */
+.page-about .about-img { position: relative; }
+.page-about .about-img::before {
+  content: ""; position: absolute; z-index: -1; inset: 0;
+  background: var(--orange); border-radius: 32px;
+  transform: rotate(-3deg) scale(1.02);
+}
+.page-about .about-row.reverse .about-img::before {
+  background: var(--navy-3); border: 1px solid var(--line);
+  transform: rotate(3deg) scale(1.02);
+}
+.page-about .about-img img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 22%;
+  border: 0; border-radius: 28px 28px 96px 28px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 12px 24px -8px rgba(0, 0, 0, .35);
+}
+.page-about .about-row.reverse .about-img img { border-radius: 28px 28px 28px 96px; object-position: 50% 50%; }
+
+/* Tiêu đề phần: cỡ hiển thị, in hoa */
+.page-about .section-title {
+  font-size: clamp(2.2rem, 5vw, 3.75rem);
+  font-weight: 800; text-transform: uppercase;
+  line-height: .98; letter-spacing: -.03em; text-wrap: balance;
+  margin: 0 0 24px; padding: 0; border: 0;
+}
+.page-about .section-title::before { display: none; }
+
+.page-about .about-text p {
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem); line-height: 1.75;
+  color: #D5DEEA; max-width: 52ch;
+}
+
+/* Chuyển động: một khoảnh khắc — ảnh nghiêng "đặt" vào vị trí khi hiện ra */
+.page-about .about-row.reveal { transform: none; opacity: 1; }
+.page-about .about-row.reveal .about-img { opacity: 0; transform: translateY(28px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.page-about .about-row.reveal.is-visible .about-img { opacity: 1; transform: none; }
+.page-about .about-row:hover .about-img img { transform: none; }
+
+/* ---- Màn hình nhỏ ---- */
+@media (max-width: 820px) {
+  .page-about .hero-sm { padding: 56px 0 48px; }
+  .page-about .about-row,
+  .page-about .about-row.reverse { grid-template-columns: 1fr; padding: 56px 0; gap: 40px; }
+  .page-about .about-row.reverse .about-img { order: 0; }
+  .page-about .about-img img,
+  .page-about .about-row.reverse .about-img img { border-radius: 24px 24px 64px 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-about .about-row.reveal .about-img { opacity: 1; transform: none; }
+}

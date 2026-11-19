@@ -1,0 +1,200 @@
+/* ============ Score — bolder pass (chỉ áp dụng cho body.page-score) ============
+   Trang vận hành: bảng xếp hạng. Táo bạo = chữ hiển thị lớn + nhịp rõ ràng:
+   top 3 là đỉnh của trang (số thứ hạng khổng lồ), phần còn lại dày và dễ quét.
+   Một màu nhấn (cam). Không gradient, không blur. */
+
+.page-score ::selection {
+  background: var(--orange);
+  color: var(--navy);
+}
+.page-score {
+  scrollbar-color: var(--orange) var(--navy);
+  scrollbar-width: thin;
+}
+
+/* ---- Hero: trái, chữ cỡ lớn ---- */
+.page-score .hero-sm {
+  padding: 88px 0 64px;
+  text-align: left;
+}
+.page-score .hero-sm .container {
+  max-width: 920px;
+}
+.page-score .hero-title {
+  font-size: clamp(2.6rem, 8.5vw, 6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  max-width: 14ch;
+  text-wrap: balance;
+}
+.page-score .hero-sub {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 600;
+  color: var(--text);
+  max-width: 40ch;
+  margin: 24px 0 0;
+  text-wrap: balance;
+}
+.page-score .score-rules {
+  margin: 32px 0 0;
+  max-width: 880px;
+}
+
+/* ---- Tìm kiếm: dính dưới header để lọc 300+ VĐV ở bất kỳ vị trí cuộn nào ---- */
+.page-score .section {
+  padding-top: 32px;
+}
+.page-score .search-bar {
+  position: sticky;
+  top: 69px;                       /* sát dưới header */
+  z-index: 40;
+  max-width: 892px;
+  margin: 0 auto;
+  padding: 12px 6px;
+  background: var(--navy);         /* nền đặc: các hàng cuộn qua không lọt ra hai bên */
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.page-score .search-bar.is-stuck {
+  border-bottom-color: var(--line);
+  box-shadow: 0 10px 16px -10px rgba(0, 0, 0, 0.7);
+}
+.page-score .search-box {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-overflow: ellipsis;
+  background-color: var(--navy-3);               /* sáng hơn các hàng (navy-2) */
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: none;
+}
+.page-score .search-box:focus {
+  border-color: var(--orange);
+  box-shadow: none;
+}
+
+/* ---- Danh sách ---- */
+.page-score .rank-list {
+  margin-top: 8px;
+  max-width: 880px;
+  gap: 6px;
+}
+.page-score .rank-row {
+  padding: 8px 20px;
+}
+.page-score .rank-no {
+  letter-spacing: -0.04em;
+}
+.page-score .rank-rating {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* ---- Top 3: số hạng khổng lồ, ảnh lớn, điểm lớn ---- */
+.page-score .top-1,
+.page-score .top-2,
+.page-score .top-3 {
+  gap: clamp(14px, 3vw, 28px);
+  animation: score-rise 0.7s var(--ease) both;
+}
+.page-score .top-2 {
+  animation-delay: 0.08s;
+}
+.page-score .top-3 {
+  animation-delay: 0.16s;
+}
+
+.page-score .top-1 {
+  padding: 28px clamp(18px, 3vw, 32px);
+  margin-bottom: 8px;
+}
+.page-score .top-2,
+.page-score .top-3 {
+  padding: 20px clamp(18px, 3vw, 32px);
+}
+
+.page-score .top-1 .rank-no,
+.page-score .top-2 .rank-no,
+.page-score .top-3 .rank-no {
+  width: auto;
+  min-width: 1.1ch;
+  line-height: 0.85;
+  font-weight: 800;
+}
+.page-score .top-1 .rank-no {
+  font-size: clamp(3.6rem, 10vw, 6rem);
+}
+.page-score .top-2 .rank-no,
+.page-score .top-3 .rank-no {
+  font-size: clamp(2.8rem, 7vw, 4.25rem);
+}
+
+.page-score .top-1 .rank-avatar {
+  width: clamp(68px, 12vw, 104px);
+  height: clamp(68px, 12vw, 104px);
+  border-width: 3px;
+}
+.page-score .top-2 .rank-avatar,
+.page-score .top-3 .rank-avatar {
+  width: clamp(56px, 9vw, 76px);
+  height: clamp(56px, 9vw, 76px);
+}
+
+.page-score .top-1 .rank-name {
+  font-size: clamp(1.25rem, 3vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.page-score .top-2 .rank-name,
+.page-score .top-3 .rank-name {
+  font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.page-score .top-1 .rank-rating {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  color: var(--gold);
+}
+.page-score .top-2 .rank-rating,
+.page-score .top-3 .rank-rating {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+@keyframes score-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---- Màn hình nhỏ ---- */
+@media (max-width: 640px) {
+  .page-score .hero-sm {
+    padding: 56px 0 40px;
+  }
+  .page-score .search-bar {
+    top: 109px;
+  }
+  .page-score .top-1 {
+    padding: 20px 16px;
+  }
+  .page-score .top-2,
+  .page-score .top-3 {
+    padding: 14px 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-score .top-1,
+  .page-score .top-2,
+  .page-score .top-3 {
+    animation: none;
+  }
+}

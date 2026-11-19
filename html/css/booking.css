@@ -1,0 +1,158 @@
+/* ============ Booking (chỉ áp dụng cho body.page-booking) ============
+   Trang vận hành: chọn ngày → sân → giờ, tóm tắt cố định bên phải.
+   Một màu nhấn (cam), viền 1px, không gradient/blur. */
+
+.page-booking ::selection { background: var(--orange); color: var(--navy); }
+.page-booking { scrollbar-color: var(--orange) var(--navy); scrollbar-width: thin; }
+
+/* ---- Hero (cùng ngôn ngữ với Score/About) ---- */
+.page-booking .hero-sm { padding: 72px 0 48px; text-align: left; }
+.page-booking .hero-sm .container { max-width: 1040px; }
+.page-booking .hero-title { font-size: clamp(3rem, 10vw, 6rem); font-weight: 800; line-height: .92; letter-spacing: -.035em; }
+.page-booking .hero-sub { font-size: clamp(1.05rem, 2vw, 1.3rem); font-weight: 600; color: var(--text); margin: 20px 0 0; max-width: 40ch; }
+.booking-note { margin-top: 16px; max-width: 60ch; font-size: .88rem; color: var(--muted); }
+
+/* ---- Bố cục ---- */
+.page-booking .section { padding-top: 40px; }
+.booking { max-width: 1040px; }
+.booking-grid { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: clamp(24px, 4vw, 48px); align-items: start; }
+.booking-h { font-size: 1.05rem; font-weight: 800; letter-spacing: -.01em; margin: 0 0 12px; }
+.booking-pick .booking-h:not(:first-child) { margin-top: 36px; }
+
+/* ---- Ngày: nút mở bảng lịch ---- */
+.datepick { position: relative; max-width: 420px; }
+.date-btn {
+  display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px 16px;
+  background: var(--navy-2); color: var(--text); border: 1px solid var(--line); border-radius: 12px;
+  font-size: 1rem; font-weight: 700; text-align: left; cursor: pointer;
+  transition: border-color .2s var(--ease), transform .1s var(--ease);
+}
+.date-btn:hover, .date-btn[aria-expanded="true"] { border-color: rgba(240, 78, 35, .55); }
+.date-btn:active { transform: translateY(1px); }
+.date-btn svg { flex: none; color: var(--orange); }
+.date-btn .chev { margin-left: auto; color: var(--muted); transition: transform .2s var(--ease); }
+.date-btn[aria-expanded="true"] .chev { transform: rotate(180deg); }
+
+/* ---- Bảng lịch ---- */
+.cal {
+  position: absolute; z-index: 60; top: calc(100% + 8px); left: 0;
+  width: 340px; max-width: calc(100vw - 40px); padding: 16px;
+  background: var(--navy-2); border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 16px 32px -8px rgba(0, 0, 0, .5);
+}
+.cal[hidden] { display: none; }
+.cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.cal-head strong { font-size: 1rem; font-weight: 800; letter-spacing: -.01em; }
+.cal-nav {
+  width: 36px; height: 36px; display: grid; place-items: center; cursor: pointer;
+  background: transparent; color: var(--text); border: 1px solid var(--line); border-radius: 10px;
+  transition: border-color .2s var(--ease), transform .1s var(--ease);
+}
+.cal-nav:hover:not(:disabled) { border-color: rgba(240, 78, 35, .55); }
+.cal-nav:active:not(:disabled) { transform: translateY(1px); }
+.cal-nav:disabled { color: #8393AA; opacity: .5; cursor: not-allowed; }
+.cal-dow, .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.cal-dow { margin-bottom: 6px; text-align: center; font-size: .75rem; font-weight: 700; color: var(--muted); }
+.cal-blank { aspect-ratio: 1; }
+.cal-day {
+  aspect-ratio: 1; display: grid; place-items: center; cursor: pointer;
+  font-size: .95rem; font-weight: 600; font-variant-numeric: tabular-nums;
+  background: transparent; color: var(--text); border: 1px solid transparent; border-radius: 10px;
+  transition: background-color .15s var(--ease), border-color .15s var(--ease);
+}
+.cal-day:hover:not(:disabled) { background: var(--navy-3); }
+.cal-day.is-today { border-color: var(--orange); }
+.cal-day[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: var(--navy); font-weight: 800; }
+.cal-day:disabled { color: #8393AA; opacity: .45; cursor: not-allowed; }
+
+/* ---- Sân ---- */
+.court-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.court {
+  padding: 10px 20px; font-weight: 700; font-size: .95rem;
+  background: var(--navy-2); color: var(--text); border: 1px solid var(--line); border-radius: 999px; cursor: pointer;
+  transition: border-color .2s var(--ease), background-color .2s var(--ease), transform .1s var(--ease);
+}
+.court:hover { border-color: rgba(240, 78, 35, .55); }
+.court:active { transform: translateY(1px); }
+.court[aria-pressed="true"] { background: var(--orange); border-color: var(--orange); color: var(--navy); }
+
+/* ---- Giờ: chế độ + dropdown giờ/phút ---- */
+.mode { position: relative; display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; margin-bottom: 20px; background: var(--navy-2); border: 1px solid var(--line); border-radius: 12px; }
+.mode input { position: absolute; opacity: 0; pointer-events: none; }
+.mode label { padding: 9px 16px; border-radius: 9px; font-size: .9rem; font-weight: 700; color: var(--muted); cursor: pointer; transition: background-color .2s var(--ease), color .2s var(--ease); }
+.mode label:hover { color: var(--text); }
+.mode input:checked + label { background: var(--orange); color: var(--navy); }
+.mode input:focus-visible + label { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+.time-row { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end; }
+.tlabel { display: block; margin-bottom: 6px; font-size: .85rem; font-weight: 700; color: var(--muted); }
+.tsel { display: flex; align-items: center; gap: 8px; }
+.colon { font-size: 1.25rem; font-weight: 800; color: var(--muted); }
+.tfield select {
+  appearance: none; -webkit-appearance: none; min-width: 78px; padding: 12px 34px 12px 14px;
+  background-color: var(--navy-2); color: var(--text); border: 1px solid var(--line); border-radius: 10px;
+  font-size: 1.05rem; font-weight: 700; font-variant-numeric: tabular-nums; cursor: pointer;
+  background-repeat: no-repeat; background-position: right 11px center; background-size: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238393AA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  transition: border-color .2s var(--ease);
+}
+.tfield select:hover:not(:disabled) { border-color: rgba(240, 78, 35, .55); }
+.tfield select:disabled { opacity: .5; cursor: not-allowed; }
+.tfield select option { background: var(--navy-2); color: var(--text); }
+#dur { min-width: 150px; }
+.end-note { margin-top: 12px; font-size: .9rem; color: var(--muted); }
+.end-note b { color: var(--text); }
+.page-booking .booking-pick .field-error { margin-top: 12px; }
+
+/* ---- Khung đã kín ---- */
+.busy { margin-top: 28px; }
+.busy-title { margin-bottom: 10px; font-size: .85rem; font-weight: 700; color: var(--muted); }
+.busy-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.busy-chip { padding: 5px 12px; border: 1px dashed #475569; border-radius: 999px; font-size: .85rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--muted); }
+.busy-none { font-size: .9rem; color: var(--muted); }
+
+/* ---- Thẻ tóm tắt + form ---- */
+.booking-side { position: sticky; top: 93px; }
+.booking-card { background: var(--navy-2); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+.summary { margin: 0 0 16px; }
+.summary > div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.summary dt { color: var(--muted); font-size: .9rem; }
+.summary dd { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+
+.field { display: block; margin: 16px 0 6px; font-size: .9rem; font-weight: 700; }
+.field .opt { color: var(--muted); font-weight: 500; }
+.booking-card input, .booking-card textarea {
+  width: 100%; padding: 12px 14px; border-radius: 10px;
+  background: var(--navy); color: var(--text); border: 1px solid var(--line); font-size: 1rem;
+  transition: border-color .2s var(--ease);
+}
+.booking-card textarea { resize: vertical; min-height: 84px; }
+.booking-card input:focus, .booking-card textarea:focus { outline: none; border-color: var(--orange); }
+.booking-card input[aria-invalid="true"] { border-color: #F87171; }
+.field-error { margin-top: 6px; font-size: .85rem; color: #F87171; }
+
+.btn-book, .btn-ghost {
+  width: 100%; margin-top: 20px; padding: 14px 20px; font-size: 1rem; font-weight: 800;
+  border-radius: 12px; cursor: pointer; transition: background-color .2s var(--ease), border-color .2s var(--ease), transform .1s var(--ease);
+}
+.btn-book { background: var(--orange); color: var(--navy); border: 1px solid var(--orange); }
+.btn-book:hover { background: #FF6236; border-color: #FF6236; }
+.btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+.btn-ghost:hover { border-color: rgba(240, 78, 35, .55); }
+.btn-book:active, .btn-ghost:active { transform: translateY(1px); }
+
+/* ---- Hoàn tất ---- */
+.booking-done .done-icon { color: var(--orange); margin-bottom: 8px; }
+.booking-done:focus { outline: none; }
+.done-code { margin-bottom: 12px; color: var(--muted); }
+.done-code b { color: var(--text); font-size: 1.25rem; letter-spacing: .04em; }
+
+/* ---- Màn hình nhỏ ---- */
+@media (max-width: 860px) {
+  .booking-grid { grid-template-columns: 1fr; }
+  .booking-side { position: static; }
+  .page-booking .hero-sm { padding: 48px 0 32px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .court, .date-btn, .cal-day, .mode label, .btn-book, .btn-ghost { transition: none; }
+}
