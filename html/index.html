@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/score.css">
+  <link rel="preload" as="image" href="img/hero-pickleball-sm.webp" media="(max-width: 640px)">
+  <link rel="preload" as="image" href="img/hero-pickleball.webp" media="(min-width: 641px)">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body class="page-score">
@@ -20,7 +22,7 @@
       <a href="index.html" class="active">Score</a>
       <a href="about.html" class="">About Us</a>
     </nav>
-      <a href="booking.html" class="btn-cta">Đặt sân</a>
+      <a href="booking.html" class="btn-cta"><svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg><span>Đặt sân</span></a>
     </div>
   </div>
 </header>
@@ -31,7 +33,14 @@
     <h1 class="hero-title">BẢNG XẾP HẠNG <span class="accent">ĐIỂM TRÌNH</span></h1>
     <p class="hero-sub">Điểm trình VĐV được Hoàng Gia Lộc đánh giá và cập nhật sau mỗi giải đấu.</p>
     <div class="score-rules">
-      <b class="rule-label">Quy tắc:</b> Vô địch <b class="pos">+0.05</b>/VĐV · Á quân <b class="pos">+0.03</b> · Hạng Ba (thua bán kết) <b class="pos">+0.02</b> · Bị loại vòng bảng <b class="neg">-0.02</b> · Bị loại các vòng knock-out khác giữ nguyên điểm
+      <b class="rule-label">Quy tắc</b>
+      <ul class="rule-list">
+        <li class="rule rule-gold"><span class="rule-name">Vô địch</span><b class="pts">+0.05</b><small>/VĐV</small></li>
+        <li class="rule rule-silver"><span class="rule-name">Á quân</span><b class="pts">+0.03</b></li>
+        <li class="rule rule-bronze"><span class="rule-name">Hạng Ba <small>(thua bán kết)</small></span><b class="pts">+0.02</b></li>
+        <li class="rule rule-neg"><span class="rule-name">Bị loại vòng bảng</span><b class="pts">-0.02</b></li>
+        <li class="rule rule-even"><span class="rule-name">Bị loại các vòng knock-out khác</span><b class="pts">giữ nguyên</b></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -43,315 +52,315 @@
     
       <a href="#" class="rank-row top-1">
         <span class="rank-no">1</span>
-        <img src="uploads/1785558819319-572194.jpeg" alt="Tuấn Gấu" class="rank-avatar">
+        <img src="img/avatars/1785558819319-572194.webp" alt="Tuấn Gấu" class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Tuấn Gấu</span>
         <span class="rank-rating">3.85</span>
       </a>
     
       <a href="#" class="rank-row top-2">
         <span class="rank-no">2</span>
-        <img src="uploads/1784696732074-17023.png" alt="Ý Pingpong" class="rank-avatar">
+        <img src="img/avatars/1784696732074-17023.webp" alt="Ý Pingpong" class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Ý Pingpong</span>
         <span class="rank-rating">3.8</span>
       </a>
     
       <a href="#" class="rank-row top-3">
         <span class="rank-no">3</span>
-        <img src="uploads/1787587265731-423460.jpeg" alt="Sần Chí Thông" class="rank-avatar">
+        <img src="img/avatars/1787587265731-423460.webp" alt="Sần Chí Thông" class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Sần Chí Thông</span>
         <span class="rank-rating">3.48</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">4</span>
-        <img src="uploads/1785800987860-200463.jpeg" alt="Vinh Lê" class="rank-avatar">
+        <img src="img/avatars/1785800987860-200463.webp" alt="Vinh Lê" class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Vinh Lê</span>
         <span class="rank-rating">3.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">5</span>
-        <img src="uploads/1785634237107-674832.jpeg" alt="Quân HDC " class="rank-avatar">
+        <img src="img/avatars/1785634237107-674832.webp" alt="Quân HDC " class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Quân HDC </span>
         <span class="rank-rating">3.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">6</span>
-        <img src="uploads/1787643244579-819900.jpeg" alt="Vỹ Y Tá " class="rank-avatar">
+        <img src="img/avatars/1787643244579-819900.webp" alt="Vỹ Y Tá " class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Vỹ Y Tá </span>
         <span class="rank-rating">3.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">7</span>
-        <img src="uploads/1784704984233-868893.jpeg" alt="Dũng Ba" class="rank-avatar">
+        <img src="img/avatars/1784704984233-868893.webp" alt="Dũng Ba" class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Dũng Ba</span>
         <span class="rank-rating">3.36</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">8</span>
-        <img src="uploads/1787586474417-824827.jpeg" alt="Dr Linh " class="rank-avatar">
+        <img src="img/avatars/1787586474417-824827.webp" alt="Dr Linh " class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Dr Linh </span>
         <span class="rank-rating">3.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">9</span>
-        <img src="uploads/1785727861665-383898.jpeg" alt="Huy Hoàng" class="rank-avatar">
+        <img src="img/avatars/1785727861665-383898.webp" alt="Huy Hoàng" class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Huy Hoàng</span>
         <span class="rank-rating">3.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">10</span>
-        <img src="uploads/1787118808788-547217.jpeg" alt="Hồ Ngọc Thuận" class="rank-avatar">
+        <img src="img/avatars/1787118808788-547217.webp" alt="Hồ Ngọc Thuận" class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Hồ Ngọc Thuận</span>
         <span class="rank-rating">3.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">11</span>
-        <img src="uploads/1786411979941-346955.jpeg" alt="Linh Pickcar" class="rank-avatar">
+        <img src="img/avatars/1786411979941-346955.webp" alt="Linh Pickcar" class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Linh Pickcar</span>
         <span class="rank-rating">3.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">12</span>
-        <img src="uploads/1785833300604-232629.jpeg" alt="Thái Spider " class="rank-avatar">
+        <img src="img/avatars/1785833300604-232629.webp" alt="Thái Spider " class="rank-avatar" width="104" height="104" decoding="async">
         <span class="rank-name">Thái Spider </span>
         <span class="rank-rating">3.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">13</span>
-        <img src="uploads/1787186003664-102972.jpeg" alt="Tú Nghệ An" class="rank-avatar">
+        <img src="img/avatars/1787186003664-102972.webp" alt="Tú Nghệ An" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tú Nghệ An</span>
         <span class="rank-rating">3.28</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">14</span>
-        <img src="uploads/1789273190521-699083.jpeg" alt="Phong CL" class="rank-avatar">
+        <img src="img/avatars/1789273190521-699083.webp" alt="Phong CL" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phong CL</span>
         <span class="rank-rating">3.27</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">15</span>
-        <img src="uploads/1785915183473-492710.jpeg" alt="Duy BB" class="rank-avatar">
+        <img src="img/avatars/1785915183473-492710.webp" alt="Duy BB" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Duy BB</span>
         <span class="rank-rating">3.25</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">16</span>
-        <img src="uploads/1785562669041-819970.jpeg" alt="Thiện CL " class="rank-avatar">
+        <img src="img/avatars/1785562669041-819970.webp" alt="Thiện CL " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thiện CL </span>
         <span class="rank-rating">3.25</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">17</span>
-        <img src="uploads/1785041299800-928463.jpeg" alt="Harry Chun" class="rank-avatar">
+        <img src="img/avatars/1785041299800-928463.webp" alt="Harry Chun" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Harry Chun</span>
         <span class="rank-rating">3.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">18</span>
-        <img src="uploads/1787654756475-429913.jpeg" alt="Kỳ " class="rank-avatar">
+        <img src="img/avatars/1787654756475-429913.webp" alt="Kỳ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Kỳ </span>
         <span class="rank-rating">3.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">19</span>
-        <img src="uploads/1784958747372-927926.jpeg" alt="Phước Lộc " class="rank-avatar">
+        <img src="img/avatars/1784958747372-927926.webp" alt="Phước Lộc " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phước Lộc </span>
         <span class="rank-rating">3.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">20</span>
-        <img src="uploads/1787638534637-825818.jpeg" alt="Đức Hùng " class="rank-avatar">
+        <img src="img/avatars/1787638534637-825818.webp" alt="Đức Hùng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đức Hùng </span>
         <span class="rank-rating">3.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">21</span>
-        <img src="uploads/1786086539118-75083.jpeg" alt="Hữu Trọng" class="rank-avatar">
+        <img src="img/avatars/1786086539118-75083.webp" alt="Hữu Trọng" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hữu Trọng</span>
         <span class="rank-rating">3.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">22</span>
-        <img src="uploads/1785551296467-903485.jpeg" alt="Chè Q12" class="rank-avatar">
+        <img src="img/avatars/1785551296467-903485.webp" alt="Chè Q12" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Chè Q12</span>
         <span class="rank-rating">3.16</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">23</span>
-        <img src="uploads/1786412779738-127782.jpeg" alt="Thành" class="rank-avatar">
+        <img src="img/avatars/1786412779738-127782.webp" alt="Thành" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thành</span>
         <span class="rank-rating">3.13</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">24</span>
-        <img src="uploads/1786421074798-579804.jpeg" alt="Trần Thịnh" class="rank-avatar">
+        <img src="img/avatars/1786421074798-579804.webp" alt="Trần Thịnh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trần Thịnh</span>
         <span class="rank-rating">3.13</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">25</span>
-        <img src="uploads/1785846380069-588798.jpeg" alt="Di Nguyễn " class="rank-avatar">
+        <img src="img/avatars/1785846380069-588798.webp" alt="Di Nguyễn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Di Nguyễn </span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">26</span>
-        <img src="uploads/1787544183534-210437.jpeg" alt="Hiệp Ngố BB" class="rank-avatar">
+        <img src="img/avatars/1787544183534-210437.webp" alt="Hiệp Ngố BB" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hiệp Ngố BB</span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">27</span>
-        <img src="uploads/1787636857274-439467.jpeg" alt="Hùng " class="rank-avatar">
+        <img src="img/avatars/1787636857274-439467.webp" alt="Hùng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hùng </span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">28</span>
-        <img src="uploads/1789025580974-570935.jpeg" alt="Hùng Nguyễn " class="rank-avatar">
+        <img src="img/avatars/1789025580974-570935.webp" alt="Hùng Nguyễn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hùng Nguyễn </span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">29</span>
-        <img src="uploads/1785942495167-635111.jpeg" alt="Hải Smash" class="rank-avatar">
+        <img src="img/avatars/1785942495167-635111.webp" alt="Hải Smash" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hải Smash</span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">30</span>
-        <img src="uploads/1787539022308-257295.jpeg" alt="Long Phile" class="rank-avatar">
+        <img src="img/avatars/1787539022308-257295.webp" alt="Long Phile" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Long Phile</span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">31</span>
-        <img src="uploads/1785727829614-529100.jpeg" alt="Thiên Long" class="rank-avatar">
+        <img src="img/avatars/1785727829614-529100.webp" alt="Thiên Long" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thiên Long</span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">32</span>
-        <img src="uploads/1787569520383-397456.jpeg" alt="Trung Phan" class="rank-avatar">
+        <img src="img/avatars/1787569520383-397456.webp" alt="Trung Phan" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trung Phan</span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">33</span>
-        <img src="uploads/1789343897845-346300.jpeg" alt="Tuấn Flick" class="rank-avatar">
+        <img src="img/avatars/1789343897845-346300.webp" alt="Tuấn Flick" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuấn Flick</span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">34</span>
-        <img src="uploads/1785038550967-614469.jpeg" alt="Tùng VT" class="rank-avatar">
+        <img src="img/avatars/1785038550967-614469.webp" alt="Tùng VT" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tùng VT</span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">35</span>
-        <img src="uploads/1787641744165-50380.jpeg" alt="Đăng Bell" class="rank-avatar">
+        <img src="img/avatars/1787641744165-50380.webp" alt="Đăng Bell" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đăng Bell</span>
         <span class="rank-rating">3.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">36</span>
-        <img src="uploads/1787632942683-947247.jpeg" alt="Hùng Sắt" class="rank-avatar">
+        <img src="img/avatars/1787632942683-947247.webp" alt="Hùng Sắt" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hùng Sắt</span>
         <span class="rank-rating">3.08</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">37</span>
-        <img src="uploads/1787556645742-675810.jpeg" alt="Nhân KG" class="rank-avatar">
+        <img src="img/avatars/1787556645742-675810.webp" alt="Nhân KG" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nhân KG</span>
         <span class="rank-rating">3.08</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">38</span>
-        <img src="uploads/1787637078694-792058.jpeg" alt="Hà Khánh" class="rank-avatar">
+        <img src="img/avatars/1787637078694-792058.webp" alt="Hà Khánh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hà Khánh</span>
         <span class="rank-rating">3.07</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">39</span>
-        <img src="uploads/1787637098883-108845.jpeg" alt="Tuấn Gai VT" class="rank-avatar">
+        <img src="img/avatars/1787637098883-108845.webp" alt="Tuấn Gai VT" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuấn Gai VT</span>
         <span class="rank-rating">3.07</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">40</span>
-        <img src="uploads/1790132073677-215037.jpeg" alt="Hoàng " class="rank-avatar">
+        <img src="img/avatars/1790132073677-215037.webp" alt="Hoàng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoàng </span>
         <span class="rank-rating">3.05</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">41</span>
-        <img src="uploads/1785552896570-905692.jpeg" alt="Hải Phan " class="rank-avatar">
+        <img src="img/avatars/1785552896570-905692.webp" alt="Hải Phan " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hải Phan </span>
         <span class="rank-rating">3.05</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">42</span>
-        <img src="uploads/1787577370805-292072.jpeg" alt="Quân Đoàn" class="rank-avatar">
+        <img src="img/avatars/1787577370805-292072.webp" alt="Quân Đoàn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quân Đoàn</span>
         <span class="rank-rating">3.05</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">43</span>
-        <img src="uploads/1786458993130-559334.jpeg" alt="Phước LK" class="rank-avatar">
+        <img src="img/avatars/1786458993130-559334.webp" alt="Phước LK" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phước LK</span>
         <span class="rank-rating">3.03</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">44</span>
-        <img src="uploads/1784701531109-783266.jpeg" alt="Tấn Kiệt " class="rank-avatar">
+        <img src="img/avatars/1784701531109-783266.webp" alt="Tấn Kiệt " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tấn Kiệt </span>
         <span class="rank-rating">3.02</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">45</span>
-        <img src="uploads/1784786964403-199021.jpeg" alt="Tín Hậu Giang" class="rank-avatar">
+        <img src="img/avatars/1784786964403-199021.webp" alt="Tín Hậu Giang" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tín Hậu Giang</span>
         <span class="rank-rating">3.01</span>
       </a>
@@ -386,133 +395,133 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">50</span>
-        <img src="uploads/1789434315829-40430.jpeg" alt="Khoa Lu" class="rank-avatar">
+        <img src="img/avatars/1789434315829-40430.webp" alt="Khoa Lu" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Khoa Lu</span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">51</span>
-        <img src="uploads/1785830816211-707509.jpeg" alt="Moon" class="rank-avatar">
+        <img src="img/avatars/1785830816211-707509.webp" alt="Moon" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Moon</span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">52</span>
-        <img src="uploads/1784728582784-842697.jpeg" alt="Thảo GV" class="rank-avatar">
+        <img src="img/avatars/1784728582784-842697.webp" alt="Thảo GV" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thảo GV</span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">53</span>
-        <img src="uploads/1787544164894-594852.jpeg" alt="Tiến Trịnh" class="rank-avatar">
+        <img src="img/avatars/1787544164894-594852.webp" alt="Tiến Trịnh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tiến Trịnh</span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">54</span>
-        <img src="uploads/1785835959086-219123.jpeg" alt="Toàn Phan Thiết " class="rank-avatar">
+        <img src="img/avatars/1785835959086-219123.webp" alt="Toàn Phan Thiết " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Toàn Phan Thiết </span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">55</span>
-        <img src="uploads/1784723004901-583711.jpeg" alt="Tuân Võ" class="rank-avatar">
+        <img src="img/avatars/1784723004901-583711.webp" alt="Tuân Võ" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuân Võ</span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">56</span>
-        <img src="uploads/1790078783164-928768.jpeg" alt="Vinh Râu" class="rank-avatar">
+        <img src="img/avatars/1790078783164-928768.webp" alt="Vinh Râu" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Vinh Râu</span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">57</span>
-        <img src="uploads/1789430396174-565319.jpeg" alt="Ôn Tấn Lực" class="rank-avatar">
+        <img src="img/avatars/1789430396174-565319.webp" alt="Ôn Tấn Lực" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ôn Tấn Lực</span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">58</span>
-        <img src="uploads/1787636876226-927248.jpeg" alt="Đông " class="rank-avatar">
+        <img src="img/avatars/1787636876226-927248.webp" alt="Đông " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đông </span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">59</span>
-        <img src="uploads/1791006930462-882701.jpeg" alt="Đức Cường " class="rank-avatar">
+        <img src="img/avatars/1791006930462-882701.webp" alt="Đức Cường " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đức Cường </span>
         <span class="rank-rating">3.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">60</span>
-        <img src="uploads/1786506238314-568647.jpeg" alt="Duy Sony" class="rank-avatar">
+        <img src="img/avatars/1786506238314-568647.webp" alt="Duy Sony" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Duy Sony</span>
         <span class="rank-rating">2.98</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">61</span>
-        <img src="uploads/1785937818464-775901.jpeg" alt="Gia Huy" class="rank-avatar">
+        <img src="img/avatars/1785937818464-775901.webp" alt="Gia Huy" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Gia Huy</span>
         <span class="rank-rating">2.98</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">62</span>
-        <img src="uploads/1785893751565-416716.jpeg" alt="Phương Long " class="rank-avatar">
+        <img src="img/avatars/1785893751565-416716.webp" alt="Phương Long " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phương Long </span>
         <span class="rank-rating">2.98</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">63</span>
-        <img src="uploads/1785824512522-624331.jpeg" alt="Đạt" class="rank-avatar">
+        <img src="img/avatars/1785824512522-624331.webp" alt="Đạt" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đạt</span>
         <span class="rank-rating">2.98</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">64</span>
-        <img src="uploads/1785743487110-518298.jpeg" alt="Đức Nguyễn " class="rank-avatar">
+        <img src="img/avatars/1785743487110-518298.webp" alt="Đức Nguyễn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đức Nguyễn </span>
         <span class="rank-rating">2.98</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">65</span>
-        <img src="uploads/1788863701535-894003.jpeg" alt="Lộc Kaka" class="rank-avatar">
+        <img src="img/avatars/1788863701535-894003.webp" alt="Lộc Kaka" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lộc Kaka</span>
         <span class="rank-rating">2.95</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">66</span>
-        <img src="uploads/1785745028817-411912.jpeg" alt="Tiến Béo" class="rank-avatar">
+        <img src="img/avatars/1785745028817-411912.webp" alt="Tiến Béo" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tiến Béo</span>
         <span class="rank-rating">2.93</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">67</span>
-        <img src="uploads/1790045929999-962789.jpeg" alt="Tư Dn" class="rank-avatar">
+        <img src="img/avatars/1790045929999-962789.webp" alt="Tư Dn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tư Dn</span>
         <span class="rank-rating">2.92</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">68</span>
-        <img src="uploads/1786172042626-207168.jpeg" alt="Đảo" class="rank-avatar">
+        <img src="img/avatars/1786172042626-207168.webp" alt="Đảo" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đảo</span>
         <span class="rank-rating">2.92</span>
       </a>
@@ -526,77 +535,77 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">70</span>
-        <img src="uploads/1785828817524-969470.jpeg" alt="Bình Bon" class="rank-avatar">
+        <img src="img/avatars/1785828817524-969470.webp" alt="Bình Bon" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Bình Bon</span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">71</span>
-        <img src="uploads/1790078560886-404020.jpeg" alt="Chí Công" class="rank-avatar">
+        <img src="img/avatars/1790078560886-404020.webp" alt="Chí Công" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Chí Công</span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">72</span>
-        <img src="uploads/1787105297128-132151.jpeg" alt="Huy BB" class="rank-avatar">
+        <img src="img/avatars/1787105297128-132151.webp" alt="Huy BB" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huy BB</span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">73</span>
-        <img src="uploads/1784721020837-189383.jpeg" alt="Hào Milk " class="rank-avatar">
+        <img src="img/avatars/1784721020837-189383.webp" alt="Hào Milk " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hào Milk </span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">74</span>
-        <img src="uploads/1787373267092-567721.jpeg" alt="Hùng Táo " class="rank-avatar">
+        <img src="img/avatars/1787373267092-567721.webp" alt="Hùng Táo " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hùng Táo </span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">75</span>
-        <img src="uploads/1787618446425-658076.jpeg" alt="Hưng Nguyễn" class="rank-avatar">
+        <img src="img/avatars/1787618446425-658076.webp" alt="Hưng Nguyễn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hưng Nguyễn</span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">76</span>
-        <img src="uploads/1784950210127-372369.jpeg" alt="Hận Lados" class="rank-avatar">
+        <img src="img/avatars/1784950210127-372369.webp" alt="Hận Lados" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hận Lados</span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">77</span>
-        <img src="uploads/1789270009648-522855.jpeg" alt="Lâm Baby" class="rank-avatar">
+        <img src="img/avatars/1789270009648-522855.webp" alt="Lâm Baby" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lâm Baby</span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">78</span>
-        <img src="uploads/1788773945326-74967.jpeg" alt="Lương MMP" class="rank-avatar">
+        <img src="img/avatars/1788773945326-74967.webp" alt="Lương MMP" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lương MMP</span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">79</span>
-        <img src="uploads/1785801535518-614211.jpeg" alt="Minh Tuấn BB" class="rank-avatar">
+        <img src="img/avatars/1785801535518-614211.webp" alt="Minh Tuấn BB" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Minh Tuấn BB</span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">80</span>
-        <img src="uploads/1789434331245-747918.jpeg" alt="Phát" class="rank-avatar">
+        <img src="img/avatars/1789434331245-747918.webp" alt="Phát" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phát</span>
         <span class="rank-rating">2.9</span>
       </a>
@@ -610,252 +619,252 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">82</span>
-        <img src="uploads/1786360136406-552812.jpeg" alt="Triệu Vỹ " class="rank-avatar">
+        <img src="img/avatars/1786360136406-552812.webp" alt="Triệu Vỹ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Triệu Vỹ </span>
         <span class="rank-rating">2.9</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">83</span>
-        <img src="uploads/1785893774326-892641.jpeg" alt="Khoa Phạm " class="rank-avatar">
+        <img src="img/avatars/1785893774326-892641.webp" alt="Khoa Phạm " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Khoa Phạm </span>
         <span class="rank-rating">2.88</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">84</span>
-        <img src="uploads/1787696903639-555176.jpeg" alt="Kỳ " class="rank-avatar">
+        <img src="img/avatars/1787696903639-555176.webp" alt="Kỳ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Kỳ </span>
         <span class="rank-rating">2.88</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">85</span>
-        <img src="uploads/1785039195857-338133.jpeg" alt="Lăng Fung" class="rank-avatar">
+        <img src="img/avatars/1785039195857-338133.webp" alt="Lăng Fung" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lăng Fung</span>
         <span class="rank-rating">2.88</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">86</span>
-        <img src="uploads/1790135248564-188264.jpeg" alt="Minh Búa" class="rank-avatar">
+        <img src="img/avatars/1790135248564-188264.webp" alt="Minh Búa" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Minh Búa</span>
         <span class="rank-rating">2.88</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">87</span>
-        <img src="uploads/1785647889876-420575.jpeg" alt="Nguyễn Cảnh " class="rank-avatar">
+        <img src="img/avatars/1785647889876-420575.webp" alt="Nguyễn Cảnh " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nguyễn Cảnh </span>
         <span class="rank-rating">2.88</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">88</span>
-        <img src="uploads/1787556627136-284034.jpeg" alt="Quân Lê" class="rank-avatar">
+        <img src="img/avatars/1787556627136-284034.webp" alt="Quân Lê" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quân Lê</span>
         <span class="rank-rating">2.88</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">89</span>
-        <img src="uploads/1786432502736-312114.jpeg" alt="Quốc Việt" class="rank-avatar">
+        <img src="img/avatars/1786432502736-312114.webp" alt="Quốc Việt" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quốc Việt</span>
         <span class="rank-rating">2.88</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">90</span>
-        <img src="uploads/1784949670135-554850.jpeg" alt="Tùng Lưới " class="rank-avatar">
+        <img src="img/avatars/1784949670135-554850.webp" alt="Tùng Lưới " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tùng Lưới </span>
         <span class="rank-rating">2.88</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">91</span>
-        <img src="uploads/1788825108021-502213.jpeg" alt="Công còi" class="rank-avatar">
+        <img src="img/avatars/1788825108021-502213.webp" alt="Công còi" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Công còi</span>
         <span class="rank-rating">2.85</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">92</span>
-        <img src="uploads/1790132086334-659062.jpeg" alt="Ken" class="rank-avatar">
+        <img src="img/avatars/1790132086334-659062.webp" alt="Ken" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ken</span>
         <span class="rank-rating">2.85</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">93</span>
-        <img src="uploads/1785576068011-477004.jpeg" alt="Quách Hương" class="rank-avatar">
+        <img src="img/avatars/1785576068011-477004.webp" alt="Quách Hương" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quách Hương</span>
         <span class="rank-rating">2.83</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">94</span>
-        <img src="uploads/1784783859271-593067.jpeg" alt="Lê Nhiên " class="rank-avatar">
+        <img src="img/avatars/1784783859271-593067.webp" alt="Lê Nhiên " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lê Nhiên </span>
         <span class="rank-rating">2.82</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">95</span>
-        <img src="uploads/1786588494313-408032.jpeg" alt="Qà " class="rank-avatar">
+        <img src="img/avatars/1786588494313-408032.webp" alt="Qà " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Qà </span>
         <span class="rank-rating">2.82</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">96</span>
-        <img src="uploads/1789959709574-694782.jpeg" alt="Bảo Khang" class="rank-avatar">
+        <img src="img/avatars/1789959709574-694782.webp" alt="Bảo Khang" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Bảo Khang</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">97</span>
-        <img src="uploads/1787649347493-682729.jpeg" alt="Cảnh" class="rank-avatar">
+        <img src="img/avatars/1787649347493-682729.webp" alt="Cảnh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Cảnh</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">98</span>
-        <img src="uploads/1787118832564-729449.jpeg" alt="Dương Nguyễn " class="rank-avatar">
+        <img src="img/avatars/1787118832564-729449.webp" alt="Dương Nguyễn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Dương Nguyễn </span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">99</span>
-        <img src="uploads/1785942556188-138367.jpeg" alt="Hoàng Phan" class="rank-avatar">
+        <img src="img/avatars/1785942556188-138367.webp" alt="Hoàng Phan" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoàng Phan</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">100</span>
-        <img src="uploads/1786337969490-143541.jpeg" alt="Khánh Mập" class="rank-avatar">
+        <img src="img/avatars/1786337969490-143541.webp" alt="Khánh Mập" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Khánh Mập</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">101</span>
-        <img src="uploads/1784723547725-197419.jpeg" alt="Khánh Điện" class="rank-avatar">
+        <img src="img/avatars/1784723547725-197419.webp" alt="Khánh Điện" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Khánh Điện</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">102</span>
-        <img src="uploads/1788796359599-348594.jpeg" alt="Lee Anh" class="rank-avatar">
+        <img src="img/avatars/1788796359599-348594.webp" alt="Lee Anh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lee Anh</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">103</span>
-        <img src="uploads/1785942525961-856813.jpeg" alt="Mẫn " class="rank-avatar">
+        <img src="img/avatars/1785942525961-856813.webp" alt="Mẫn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Mẫn </span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">104</span>
-        <img src="uploads/1787586501401-760170.jpeg" alt="Nhật Đỗ " class="rank-avatar">
+        <img src="img/avatars/1787586501401-760170.webp" alt="Nhật Đỗ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nhật Đỗ </span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">105</span>
-        <img src="uploads/1786711058841-675339.jpeg" alt="Phạm Luận" class="rank-avatar">
+        <img src="img/avatars/1786711058841-675339.webp" alt="Phạm Luận" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phạm Luận</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">106</span>
-        <img src="uploads/1791257795916-262491.jpeg" alt="Quang Anh" class="rank-avatar">
+        <img src="img/avatars/1791257795916-262491.webp" alt="Quang Anh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Anh</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">107</span>
-        <img src="uploads/1786418060191-37437.jpeg" alt="Quang Pickcar" class="rank-avatar">
+        <img src="img/avatars/1786418060191-37437.webp" alt="Quang Pickcar" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Pickcar</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">108</span>
-        <img src="uploads/1790575957444-738210.jpeg" alt="Sỹ Mạnh" class="rank-avatar">
+        <img src="img/avatars/1790575957444-738210.webp" alt="Sỹ Mạnh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Sỹ Mạnh</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">109</span>
-        <img src="uploads/1789430597665-533547.jpeg" alt="Trịnh Đình Giang" class="rank-avatar">
+        <img src="img/avatars/1789430597665-533547.webp" alt="Trịnh Đình Giang" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trịnh Đình Giang</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">110</span>
-        <img src="uploads/1787649331952-575433.jpeg" alt="Tuấn Kiệt" class="rank-avatar">
+        <img src="img/avatars/1787649331952-575433.webp" alt="Tuấn Kiệt" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuấn Kiệt</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">111</span>
-        <img src="uploads/1787632957224-177420.jpeg" alt="Uy" class="rank-avatar">
+        <img src="img/avatars/1787632957224-177420.webp" alt="Uy" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Uy</span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">112</span>
-        <img src="uploads/1787373245917-992067.jpeg" alt="Việt Táo " class="rank-avatar">
+        <img src="img/avatars/1787373245917-992067.webp" alt="Việt Táo " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Việt Táo </span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">113</span>
-        <img src="uploads/1788748288217-372485.jpeg" alt="Đình Toàn " class="rank-avatar">
+        <img src="img/avatars/1788748288217-372485.webp" alt="Đình Toàn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đình Toàn </span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">114</span>
-        <img src="uploads/1785551374352-523763.jpeg" alt="Đại Thắng " class="rank-avatar">
+        <img src="img/avatars/1785551374352-523763.webp" alt="Đại Thắng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đại Thắng </span>
         <span class="rank-rating">2.8</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">115</span>
-        <img src="uploads/1785039857779-902519.jpeg" alt="Hoàng Phạm" class="rank-avatar">
+        <img src="img/avatars/1785039857779-902519.webp" alt="Hoàng Phạm" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoàng Phạm</span>
         <span class="rank-rating">2.78</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">116</span>
-        <img src="uploads/1786412764328-300335.jpeg" alt="Hưng Phát " class="rank-avatar">
+        <img src="img/avatars/1786412764328-300335.webp" alt="Hưng Phát " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hưng Phát </span>
         <span class="rank-rating">2.78</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">117</span>
-        <img src="uploads/1787549739926-678532.jpeg" alt="Linh Điện" class="rank-avatar">
+        <img src="img/avatars/1787549739926-678532.webp" alt="Linh Điện" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Linh Điện</span>
         <span class="rank-rating">2.78</span>
       </a>
@@ -869,35 +878,35 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">119</span>
-        <img src="uploads/1787560338782-780237.jpeg" alt="Lâm Vũ" class="rank-avatar">
+        <img src="img/avatars/1787560338782-780237.webp" alt="Lâm Vũ" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lâm Vũ</span>
         <span class="rank-rating">2.78</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">120</span>
-        <img src="uploads/1785038904462-780195.jpeg" alt="Nhật Vũ " class="rank-avatar">
+        <img src="img/avatars/1785038904462-780195.webp" alt="Nhật Vũ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nhật Vũ </span>
         <span class="rank-rating">2.78</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">121</span>
-        <img src="uploads/1786348317509-355678.jpeg" alt="Phúc Râu " class="rank-avatar">
+        <img src="img/avatars/1786348317509-355678.webp" alt="Phúc Râu " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phúc Râu </span>
         <span class="rank-rating">2.78</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">122</span>
-        <img src="uploads/1786422250229-512410.jpeg" alt="Quang Anh Pickcar" class="rank-avatar">
+        <img src="img/avatars/1786422250229-512410.webp" alt="Quang Anh Pickcar" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Anh Pickcar</span>
         <span class="rank-rating">2.78</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">123</span>
-        <img src="uploads/1785550748770-580165.jpeg" alt="Lâm AE" class="rank-avatar">
+        <img src="img/avatars/1785550748770-580165.webp" alt="Lâm AE" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lâm AE</span>
         <span class="rank-rating">2.75</span>
       </a>
@@ -911,70 +920,70 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">125</span>
-        <img src="uploads/1785942597824-75829.jpeg" alt="Phi Long" class="rank-avatar">
+        <img src="img/avatars/1785942597824-75829.webp" alt="Phi Long" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phi Long</span>
         <span class="rank-rating">2.75</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">126</span>
-        <img src="uploads/1788775146407-305806.jpeg" alt="Quốc Khánh" class="rank-avatar">
+        <img src="img/avatars/1788775146407-305806.webp" alt="Quốc Khánh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quốc Khánh</span>
         <span class="rank-rating">2.75</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">127</span>
-        <img src="uploads/1789983305348-569535.jpeg" alt="Thành Đạt" class="rank-avatar">
+        <img src="img/avatars/1789983305348-569535.webp" alt="Thành Đạt" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thành Đạt</span>
         <span class="rank-rating">2.75</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">128</span>
-        <img src="uploads/1785118812793-557302.jpeg" alt="Trương Phong" class="rank-avatar">
+        <img src="img/avatars/1785118812793-557302.webp" alt="Trương Phong" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trương Phong</span>
         <span class="rank-rating">2.75</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">129</span>
-        <img src="uploads/1786418079757-182255.jpeg" alt="Tuấn Liều " class="rank-avatar">
+        <img src="img/avatars/1786418079757-182255.webp" alt="Tuấn Liều " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuấn Liều </span>
         <span class="rank-rating">2.75</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">130</span>
-        <img src="uploads/1785124936990-379723.jpeg" alt="Huy HM" class="rank-avatar">
+        <img src="img/avatars/1785124936990-379723.webp" alt="Huy HM" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huy HM</span>
         <span class="rank-rating">2.73</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">131</span>
-        <img src="uploads/1784735270587-419573.jpeg" alt="Dr. Tâm Hồ" class="rank-avatar">
+        <img src="img/avatars/1784735270587-419573.webp" alt="Dr. Tâm Hồ" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Dr. Tâm Hồ</span>
         <span class="rank-rating">2.72</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">132</span>
-        <img src="uploads/1788851638042-422058.jpeg" alt="Dương Mis" class="rank-avatar">
+        <img src="img/avatars/1788851638042-422058.webp" alt="Dương Mis" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Dương Mis</span>
         <span class="rank-rating">2.72</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">133</span>
-        <img src="uploads/1786459019698-114999.jpeg" alt="Gia Minh" class="rank-avatar">
+        <img src="img/avatars/1786459019698-114999.webp" alt="Gia Minh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Gia Minh</span>
         <span class="rank-rating">2.71</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">134</span>
-        <img src="uploads/1785119037438-421421.jpeg" alt="Long Lớn" class="rank-avatar">
+        <img src="img/avatars/1785119037438-421421.webp" alt="Long Lớn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Long Lớn</span>
         <span class="rank-rating">2.71</span>
       </a>
@@ -988,175 +997,175 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">136</span>
-        <img src="uploads/1784696789687-747202.png" alt="Hiền Trương" class="rank-avatar">
+        <img src="img/avatars/1784696789687-747202.webp" alt="Hiền Trương" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hiền Trương</span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">137</span>
-        <img src="uploads/1784954936448-430649.jpeg" alt="Phát Nguyễn " class="rank-avatar">
+        <img src="img/avatars/1784954936448-430649.webp" alt="Phát Nguyễn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phát Nguyễn </span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">138</span>
-        <img src="uploads/1785556762794-624179.jpeg" alt="Quang Minh " class="rank-avatar">
+        <img src="img/avatars/1785556762794-624179.webp" alt="Quang Minh " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Minh </span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">139</span>
-        <img src="uploads/1789979052301-2506.jpeg" alt="Quang Vinh " class="rank-avatar">
+        <img src="img/avatars/1789979052301-2506.webp" alt="Quang Vinh " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Vinh </span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">140</span>
-        <img src="uploads/1788572817933-338828.jpeg" alt="Sam" class="rank-avatar">
+        <img src="img/avatars/1788572817933-338828.webp" alt="Sam" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Sam</span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">141</span>
-        <img src="uploads/1785084197113-882096.jpeg" alt="Thanh Sang" class="rank-avatar">
+        <img src="img/avatars/1785084197113-882096.webp" alt="Thanh Sang" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thanh Sang</span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">142</span>
-        <img src="uploads/1789025560606-993986.jpeg" alt="Thiện răng sứ " class="rank-avatar">
+        <img src="img/avatars/1789025560606-993986.webp" alt="Thiện răng sứ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thiện răng sứ </span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">143</span>
-        <img src="uploads/1785038644657-729830.jpeg" alt="Trường Giang" class="rank-avatar">
+        <img src="img/avatars/1785038644657-729830.webp" alt="Trường Giang" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trường Giang</span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">144</span>
-        <img src="uploads/1788775238786-227226.jpeg" alt="Tuấn Cao" class="rank-avatar">
+        <img src="img/avatars/1788775238786-227226.webp" alt="Tuấn Cao" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuấn Cao</span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">145</span>
-        <img src="uploads/1788677425493-177337.jpeg" alt="Tùng " class="rank-avatar">
+        <img src="img/avatars/1788677425493-177337.webp" alt="Tùng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tùng </span>
         <span class="rank-rating">2.7</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">146</span>
-        <img src="uploads/1790079243133-195985.jpeg" alt="Chôm chôm" class="rank-avatar">
+        <img src="img/avatars/1790079243133-195985.webp" alt="Chôm chôm" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Chôm chôm</span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">147</span>
-        <img src="uploads/1785738157891-924714.jpeg" alt="Duy Chef " class="rank-avatar">
+        <img src="img/avatars/1785738157891-924714.webp" alt="Duy Chef " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Duy Chef </span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">148</span>
-        <img src="uploads/1790124207642-532398.jpeg" alt="Linh" class="rank-avatar">
+        <img src="img/avatars/1790124207642-532398.webp" alt="Linh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Linh</span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">149</span>
-        <img src="uploads/1788491653615-821831.jpeg" alt="Nam Còi " class="rank-avatar">
+        <img src="img/avatars/1788491653615-821831.webp" alt="Nam Còi " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nam Còi </span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">150</span>
-        <img src="uploads/1787634601687-933927.jpeg" alt="Nhựt SB" class="rank-avatar">
+        <img src="img/avatars/1787634601687-933927.webp" alt="Nhựt SB" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nhựt SB</span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">151</span>
-        <img src="uploads/1786086557773-166406.jpeg" alt="Quang Đỗ" class="rank-avatar">
+        <img src="img/avatars/1786086557773-166406.webp" alt="Quang Đỗ" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Đỗ</span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">152</span>
-        <img src="uploads/1786506254371-305742.jpeg" alt="Thành Núi " class="rank-avatar">
+        <img src="img/avatars/1786506254371-305742.webp" alt="Thành Núi " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thành Núi </span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">153</span>
-        <img src="uploads/1784955100688-283486.jpeg" alt="Toàn Gà Mái" class="rank-avatar">
+        <img src="img/avatars/1784955100688-283486.webp" alt="Toàn Gà Mái" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Toàn Gà Mái</span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">154</span>
-        <img src="uploads/1790124132268-49076.jpeg" alt="Tùng " class="rank-avatar">
+        <img src="img/avatars/1790124132268-49076.webp" alt="Tùng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tùng </span>
         <span class="rank-rating">2.68</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">155</span>
-        <img src="uploads/1785043621081-297881.jpeg" alt="Jonathan Khải " class="rank-avatar">
+        <img src="img/avatars/1785043621081-297881.webp" alt="Jonathan Khải " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Jonathan Khải </span>
         <span class="rank-rating">2.63</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">156</span>
-        <img src="uploads/1786432518073-980276.jpeg" alt="Ken nhỏ " class="rank-avatar">
+        <img src="img/avatars/1786432518073-980276.webp" alt="Ken nhỏ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ken nhỏ </span>
         <span class="rank-rating">2.63</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">157</span>
-        <img src="uploads/1785509369417-449484.jpg" alt="Nguyễn Đình Hiếu" class="rank-avatar">
+        <img src="img/avatars/1785509369417-449484.webp" alt="Nguyễn Đình Hiếu" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nguyễn Đình Hiếu</span>
         <span class="rank-rating">2.63</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">158</span>
-        <img src="uploads/1785571059435-868581.jpeg" alt="Phú Hoàn " class="rank-avatar">
+        <img src="img/avatars/1785571059435-868581.webp" alt="Phú Hoàn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phú Hoàn </span>
         <span class="rank-rating">2.63</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">159</span>
-        <img src="uploads/1785837688895-428242.jpeg" alt="Thành " class="rank-avatar">
+        <img src="img/avatars/1785837688895-428242.webp" alt="Thành " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thành </span>
         <span class="rank-rating">2.63</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">160</span>
-        <img src="uploads/1788759610503-189656.jpeg" alt="Rô " class="rank-avatar">
+        <img src="img/avatars/1788759610503-189656.webp" alt="Rô " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Rô </span>
         <span class="rank-rating">2.62</span>
       </a>
@@ -1177,168 +1186,168 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">163</span>
-        <img src="uploads/1788572056583-261013.jpeg" alt="Cường Lê" class="rank-avatar">
+        <img src="img/avatars/1788572056583-261013.webp" alt="Cường Lê" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Cường Lê</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">164</span>
-        <img src="uploads/1789273170156-638245.jpeg" alt="Hảo Hảo" class="rank-avatar">
+        <img src="img/avatars/1789273170156-638245.webp" alt="Hảo Hảo" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hảo Hảo</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">165</span>
-        <img src="uploads/1788750515162-32377.jpeg" alt="Hữu Thiện" class="rank-avatar">
+        <img src="img/avatars/1788750515162-32377.webp" alt="Hữu Thiện" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hữu Thiện</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">166</span>
-        <img src="uploads/1788684053959-427408.jpeg" alt="Khưu Hoàng" class="rank-avatar">
+        <img src="img/avatars/1788684053959-427408.webp" alt="Khưu Hoàng" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Khưu Hoàng</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">167</span>
-        <img src="uploads/1788864875875-487395.jpeg" alt="Ngọc Trung" class="rank-avatar">
+        <img src="img/avatars/1788864875875-487395.webp" alt="Ngọc Trung" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ngọc Trung</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">168</span>
-        <img src="uploads/1788856217333-221731.jpeg" alt="Phi Nguyễn" class="rank-avatar">
+        <img src="img/avatars/1788856217333-221731.webp" alt="Phi Nguyễn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phi Nguyễn</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">169</span>
-        <img src="uploads/1785550861200-912382.jpeg" alt="Quân Luật Sư" class="rank-avatar">
+        <img src="img/avatars/1785550861200-912382.webp" alt="Quân Luật Sư" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quân Luật Sư</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">170</span>
-        <img src="uploads/1784704738890-820741.jpeg" alt="Quỳnh Nguyễn " class="rank-avatar">
+        <img src="img/avatars/1784704738890-820741.webp" alt="Quỳnh Nguyễn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quỳnh Nguyễn </span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">171</span>
-        <img src="uploads/1788572185197-362713.jpeg" alt="Ritchie" class="rank-avatar">
+        <img src="img/avatars/1788572185197-362713.webp" alt="Ritchie" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ritchie</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">172</span>
-        <img src="uploads/1791161123158-934417.jpeg" alt="Sơn Em" class="rank-avatar">
+        <img src="img/avatars/1791161123158-934417.webp" alt="Sơn Em" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Sơn Em</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">173</span>
-        <img src="uploads/1789025134773-957987.jpeg" alt="Thành Nhân " class="rank-avatar">
+        <img src="img/avatars/1789025134773-957987.webp" alt="Thành Nhân " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thành Nhân </span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">174</span>
-        <img src="uploads/1786412263854-95674.jpeg" alt="Tùng Pickcar" class="rank-avatar">
+        <img src="img/avatars/1786412263854-95674.webp" alt="Tùng Pickcar" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tùng Pickcar</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">175</span>
-        <img src="uploads/1788699292211-918872.jpeg" alt="Đạt " class="rank-avatar">
+        <img src="img/avatars/1788699292211-918872.webp" alt="Đạt " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đạt </span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">176</span>
-        <img src="uploads/1785737055086-47503.jpeg" alt="Độ Mixue" class="rank-avatar">
+        <img src="img/avatars/1785737055086-47503.webp" alt="Độ Mixue" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Độ Mixue</span>
         <span class="rank-rating">2.6</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">177</span>
-        <img src="uploads/1788430818751-267574.jpeg" alt="Duy D&amp;D " class="rank-avatar">
+        <img src="img/avatars/1788430818751-267574.webp" alt="Duy D&amp;D " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Duy D&amp;D </span>
         <span class="rank-rating">2.58</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">178</span>
-        <img src="uploads/1788750155832-569009.jpeg" alt="Gia Bảo " class="rank-avatar">
+        <img src="img/avatars/1788750155832-569009.webp" alt="Gia Bảo " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Gia Bảo </span>
         <span class="rank-rating">2.58</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">179</span>
-        <img src="uploads/1788430847134-655609.jpeg" alt="Hải D&amp;D " class="rank-avatar">
+        <img src="img/avatars/1788430847134-655609.webp" alt="Hải D&amp;D " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hải D&amp;D </span>
         <span class="rank-rating">2.58</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">180</span>
-        <img src="uploads/1788750175505-746108.jpeg" alt="Lê Sơn" class="rank-avatar">
+        <img src="img/avatars/1788750175505-746108.webp" alt="Lê Sơn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lê Sơn</span>
         <span class="rank-rating">2.58</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">181</span>
-        <img src="uploads/1788491979365-887239.jpeg" alt="Phong Híp" class="rank-avatar">
+        <img src="img/avatars/1788491979365-887239.webp" alt="Phong Híp" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phong Híp</span>
         <span class="rank-rating">2.58</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">182</span>
-        <img src="uploads/1788856882646-612606.jpeg" alt="Quang Minh Kaka " class="rank-avatar">
+        <img src="img/avatars/1788856882646-612606.webp" alt="Quang Minh Kaka " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Minh Kaka </span>
         <span class="rank-rating">2.58</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">183</span>
-        <img src="uploads/1787643199556-113514.jpeg" alt="Biên " class="rank-avatar">
+        <img src="img/avatars/1787643199556-113514.webp" alt="Biên " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Biên </span>
         <span class="rank-rating">2.56</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">184</span>
-        <img src="uploads/1785775430052-942165.jpeg" alt="Văn Đoàn" class="rank-avatar">
+        <img src="img/avatars/1785775430052-942165.webp" alt="Văn Đoàn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Văn Đoàn</span>
         <span class="rank-rating">2.56</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">185</span>
-        <img src="uploads/1788765730453-469912.jpeg" alt="Hoà nước" class="rank-avatar">
+        <img src="img/avatars/1788765730453-469912.webp" alt="Hoà nước" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoà nước</span>
         <span class="rank-rating">2.55</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">186</span>
-        <img src="uploads/1786894603753-517631.jpeg" alt="Quý Gà " class="rank-avatar">
+        <img src="img/avatars/1786894603753-517631.webp" alt="Quý Gà " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quý Gà </span>
         <span class="rank-rating">2.55</span>
       </a>
@@ -1352,84 +1361,84 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">188</span>
-        <img src="uploads/1787226738575-383653.jpeg" alt="Văn Mạnh" class="rank-avatar">
+        <img src="img/avatars/1787226738575-383653.webp" alt="Văn Mạnh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Văn Mạnh</span>
         <span class="rank-rating">2.52</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">189</span>
-        <img src="uploads/1785041230112-817861.jpeg" alt="Bs Trung" class="rank-avatar">
+        <img src="img/avatars/1785041230112-817861.webp" alt="Bs Trung" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Bs Trung</span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">190</span>
-        <img src="uploads/1788450025098-258031.jpeg" alt="Châu Châu " class="rank-avatar">
+        <img src="img/avatars/1788450025098-258031.webp" alt="Châu Châu " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Châu Châu </span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">191</span>
-        <img src="uploads/1788754772273-741450.jpeg" alt="Hiệu Đỗ " class="rank-avatar">
+        <img src="img/avatars/1788754772273-741450.webp" alt="Hiệu Đỗ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hiệu Đỗ </span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">192</span>
-        <img src="uploads/1789638277242-225112.jpeg" alt="Huy Nguyễn" class="rank-avatar">
+        <img src="img/avatars/1789638277242-225112.webp" alt="Huy Nguyễn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huy Nguyễn</span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">193</span>
-        <img src="uploads/1788767855995-753387.jpeg" alt="Huy hung hãn" class="rank-avatar">
+        <img src="img/avatars/1788767855995-753387.webp" alt="Huy hung hãn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huy hung hãn</span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">194</span>
-        <img src="uploads/1785551440072-797446.jpeg" alt="Sarah Kim" class="rank-avatar">
+        <img src="img/avatars/1785551440072-797446.webp" alt="Sarah Kim" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Sarah Kim</span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">195</span>
-        <img src="uploads/1785552844394-447003.jpeg" alt="Thượng NĐ" class="rank-avatar">
+        <img src="img/avatars/1785552844394-447003.webp" alt="Thượng NĐ" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thượng NĐ</span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">196</span>
-        <img src="uploads/1785801027733-944212.jpeg" alt="Tiến VCB" class="rank-avatar">
+        <img src="img/avatars/1785801027733-944212.webp" alt="Tiến VCB" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tiến VCB</span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">197</span>
-        <img src="uploads/1788576755969-430061.jpeg" alt="Tân HM" class="rank-avatar">
+        <img src="img/avatars/1788576755969-430061.webp" alt="Tân HM" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tân HM</span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">198</span>
-        <img src="uploads/1791007281690-400638.jpeg" alt="Đạt Lục" class="rank-avatar">
+        <img src="img/avatars/1791007281690-400638.webp" alt="Đạt Lục" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đạt Lục</span>
         <span class="rank-rating">2.5</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">199</span>
-        <img src="uploads/1784954965169-662191.jpeg" alt="Phan Quang" class="rank-avatar">
+        <img src="img/avatars/1784954965169-662191.webp" alt="Phan Quang" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phan Quang</span>
         <span class="rank-rating">2.49</span>
       </a>
@@ -1443,217 +1452,217 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">201</span>
-        <img src="uploads/1786171269465-423865.jpeg" alt="Kim" class="rank-avatar">
+        <img src="img/avatars/1786171269465-423865.webp" alt="Kim" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Kim</span>
         <span class="rank-rating">2.48</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">202</span>
-        <img src="uploads/1785775104628-795169.jpeg" alt="Minh Thiện " class="rank-avatar">
+        <img src="img/avatars/1785775104628-795169.webp" alt="Minh Thiện " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Minh Thiện </span>
         <span class="rank-rating">2.48</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">203</span>
-        <img src="uploads/1788617527909-530179.jpeg" alt="Mr Điền" class="rank-avatar">
+        <img src="img/avatars/1788617527909-530179.webp" alt="Mr Điền" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Mr Điền</span>
         <span class="rank-rating">2.48</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">204</span>
-        <img src="uploads/1788793162668-287742.jpeg" alt="Ngọc Đức" class="rank-avatar">
+        <img src="img/avatars/1788793162668-287742.webp" alt="Ngọc Đức" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ngọc Đức</span>
         <span class="rank-rating">2.48</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">205</span>
-        <img src="uploads/1785040192599-70058.jpeg" alt="Phan Cường " class="rank-avatar">
+        <img src="img/avatars/1785040192599-70058.webp" alt="Phan Cường " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phan Cường </span>
         <span class="rank-rating">2.48</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">206</span>
-        <img src="uploads/1788765691656-188163.jpeg" alt="Thanh Tuấn" class="rank-avatar">
+        <img src="img/avatars/1788765691656-188163.webp" alt="Thanh Tuấn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thanh Tuấn</span>
         <span class="rank-rating">2.48</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">207</span>
-        <img src="uploads/1784978340191-882408.jpeg" alt="Đỗ Mẫn " class="rank-avatar">
+        <img src="img/avatars/1784978340191-882408.webp" alt="Đỗ Mẫn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đỗ Mẫn </span>
         <span class="rank-rating">2.48</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">208</span>
-        <img src="uploads/1788750536710-6251.jpeg" alt="Hoàng Minh" class="rank-avatar">
+        <img src="img/avatars/1788750536710-6251.webp" alt="Hoàng Minh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoàng Minh</span>
         <span class="rank-rating">2.47</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">209</span>
-        <img src="uploads/1784959106650-217764.jpeg" alt="Dũng Lucas " class="rank-avatar">
+        <img src="img/avatars/1784959106650-217764.webp" alt="Dũng Lucas " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Dũng Lucas </span>
         <span class="rank-rating">2.46</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">210</span>
-        <img src="uploads/1785725973694-493553.jpeg" alt="Tristan Đỗ" class="rank-avatar">
+        <img src="img/avatars/1785725973694-493553.webp" alt="Tristan Đỗ" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tristan Đỗ</span>
         <span class="rank-rating">2.46</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">211</span>
-        <img src="uploads/1785549860981-330433.jpeg" alt="Hương Phạm" class="rank-avatar">
+        <img src="img/avatars/1785549860981-330433.webp" alt="Hương Phạm" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hương Phạm</span>
         <span class="rank-rating">2.45</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">212</span>
-        <img src="uploads/1785912233387-813094.jpeg" alt="Minh Tiến " class="rank-avatar">
+        <img src="img/avatars/1785912233387-813094.webp" alt="Minh Tiến " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Minh Tiến </span>
         <span class="rank-rating">2.45</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">213</span>
-        <img src="uploads/1785743283646-844477.jpeg" alt="Thanh Tuấn " class="rank-avatar">
+        <img src="img/avatars/1785743283646-844477.webp" alt="Thanh Tuấn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thanh Tuấn </span>
         <span class="rank-rating">2.45</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">214</span>
-        <img src="uploads/1785550002893-425892.jpeg" alt="Trang Kute" class="rank-avatar">
+        <img src="img/avatars/1785550002893-425892.webp" alt="Trang Kute" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trang Kute</span>
         <span class="rank-rating">2.45</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">215</span>
-        <img src="uploads/1787378550275-961639.jpeg" alt="Tăng " class="rank-avatar">
+        <img src="img/avatars/1787378550275-961639.webp" alt="Tăng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tăng </span>
         <span class="rank-rating">2.45</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">216</span>
-        <img src="uploads/1788522076565-843141.jpeg" alt="Gia Bảo" class="rank-avatar">
+        <img src="img/avatars/1788522076565-843141.webp" alt="Gia Bảo" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Gia Bảo</span>
         <span class="rank-rating">2.43</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">217</span>
-        <img src="uploads/1787362140799-704981.jpeg" alt="Huỳnh Anh Tú" class="rank-avatar">
+        <img src="img/avatars/1787362140799-704981.webp" alt="Huỳnh Anh Tú" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huỳnh Anh Tú</span>
         <span class="rank-rating">2.43</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">218</span>
-        <img src="uploads/1789540851450-934419.jpeg" alt="Hà" class="rank-avatar">
+        <img src="img/avatars/1789540851450-934419.webp" alt="Hà" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hà</span>
         <span class="rank-rating">2.43</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">219</span>
-        <img src="uploads/1788521676690-1593.jpeg" alt="Lương Hiếu" class="rank-avatar">
+        <img src="img/avatars/1788521676690-1593.webp" alt="Lương Hiếu" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lương Hiếu</span>
         <span class="rank-rating">2.43</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">220</span>
-        <img src="uploads/1789455266965-516838.jpeg" alt="Vương" class="rank-avatar">
+        <img src="img/avatars/1789455266965-516838.webp" alt="Vương" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Vương</span>
         <span class="rank-rating">2.43</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">221</span>
-        <img src="uploads/1789696108791-550491.jpeg" alt="Đức Ý" class="rank-avatar">
+        <img src="img/avatars/1789696108791-550491.webp" alt="Đức Ý" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đức Ý</span>
         <span class="rank-rating">2.42</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">222</span>
-        <img src="uploads/1785569766181-609041.jpeg" alt="Quang Ocean Gym" class="rank-avatar">
+        <img src="img/avatars/1785569766181-609041.webp" alt="Quang Ocean Gym" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Ocean Gym</span>
         <span class="rank-rating">2.41</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">223</span>
-        <img src="uploads/1787226542860-242711.jpeg" alt="Chuyền Cofi " class="rank-avatar">
+        <img src="img/avatars/1787226542860-242711.webp" alt="Chuyền Cofi " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Chuyền Cofi </span>
         <span class="rank-rating">2.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">224</span>
-        <img src="uploads/1787046474821-799003.jpeg" alt="Huy Trần" class="rank-avatar">
+        <img src="img/avatars/1787046474821-799003.webp" alt="Huy Trần" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huy Trần</span>
         <span class="rank-rating">2.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">225</span>
-        <img src="uploads/1786372266966-542316.jpeg" alt="Hải Nguyễn " class="rank-avatar">
+        <img src="img/avatars/1786372266966-542316.webp" alt="Hải Nguyễn " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hải Nguyễn </span>
         <span class="rank-rating">2.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">226</span>
-        <img src="uploads/1787231961661-136328.jpeg" alt="Kim Long" class="rank-avatar">
+        <img src="img/avatars/1787231961661-136328.webp" alt="Kim Long" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Kim Long</span>
         <span class="rank-rating">2.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">227</span>
-        <img src="uploads/1785893721963-76125.jpeg" alt="Minh Vương " class="rank-avatar">
+        <img src="img/avatars/1785893721963-76125.webp" alt="Minh Vương " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Minh Vương </span>
         <span class="rank-rating">2.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">228</span>
-        <img src="uploads/1785129026774-121389.jpeg" alt="Mạnh Hùng " class="rank-avatar">
+        <img src="img/avatars/1785129026774-121389.webp" alt="Mạnh Hùng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Mạnh Hùng </span>
         <span class="rank-rating">2.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">229</span>
-        <img src="uploads/1788788658657-869200.jpeg" alt="Thắng Trần " class="rank-avatar">
+        <img src="img/avatars/1788788658657-869200.webp" alt="Thắng Trần " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thắng Trần </span>
         <span class="rank-rating">2.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">230</span>
-        <img src="uploads/1787398424710-329970.jpeg" alt="Zăn" class="rank-avatar">
+        <img src="img/avatars/1787398424710-329970.webp" alt="Zăn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Zăn</span>
         <span class="rank-rating">2.4</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">231</span>
-        <img src="uploads/1788910819189-476385.jpeg" alt="Đạt ĐN" class="rank-avatar">
+        <img src="img/avatars/1788910819189-476385.webp" alt="Đạt ĐN" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đạt ĐN</span>
         <span class="rank-rating">2.4</span>
       </a>
@@ -1667,119 +1676,119 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">233</span>
-        <img src="uploads/1786894716715-635732.jpeg" alt="Nguyễn Khang" class="rank-avatar">
+        <img src="img/avatars/1786894716715-635732.webp" alt="Nguyễn Khang" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nguyễn Khang</span>
         <span class="rank-rating">2.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">234</span>
-        <img src="uploads/1785915536954-960038.jpeg" alt="Nhu Trần" class="rank-avatar">
+        <img src="img/avatars/1785915536954-960038.webp" alt="Nhu Trần" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nhu Trần</span>
         <span class="rank-rating">2.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">235</span>
-        <img src="uploads/1789555170248-288649.jpeg" alt="Nhật Thanh" class="rank-avatar">
+        <img src="img/avatars/1789555170248-288649.webp" alt="Nhật Thanh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nhật Thanh</span>
         <span class="rank-rating">2.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">236</span>
-        <img src="uploads/1785039758263-387783.jpeg" alt="Sơn Hà " class="rank-avatar">
+        <img src="img/avatars/1785039758263-387783.webp" alt="Sơn Hà " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Sơn Hà </span>
         <span class="rank-rating">2.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">237</span>
-        <img src="uploads/1785634195721-181037.jpeg" alt="Tuấn FM" class="rank-avatar">
+        <img src="img/avatars/1785634195721-181037.webp" alt="Tuấn FM" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuấn FM</span>
         <span class="rank-rating">2.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">238</span>
-        <img src="uploads/1788421831008-10716.jpeg" alt="Tuấn Phạm" class="rank-avatar">
+        <img src="img/avatars/1788421831008-10716.webp" alt="Tuấn Phạm" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuấn Phạm</span>
         <span class="rank-rating">2.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">239</span>
-        <img src="uploads/1788842729778-720180.jpeg" alt="Vinh Maxda" class="rank-avatar">
+        <img src="img/avatars/1788842729778-720180.webp" alt="Vinh Maxda" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Vinh Maxda</span>
         <span class="rank-rating">2.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">240</span>
-        <img src="uploads/1787408241938-77673.jpeg" alt="Đào " class="rank-avatar">
+        <img src="img/avatars/1787408241938-77673.webp" alt="Đào " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đào </span>
         <span class="rank-rating">2.38</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">241</span>
-        <img src="uploads/1785830335270-236113.jpeg" alt="Chicken Tiến " class="rank-avatar">
+        <img src="img/avatars/1785830335270-236113.webp" alt="Chicken Tiến " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Chicken Tiến </span>
         <span class="rank-rating">2.35</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">242</span>
-        <img src="uploads/1786457123972-450839.jpeg" alt="Công Nguyễn" class="rank-avatar">
+        <img src="img/avatars/1786457123972-450839.webp" alt="Công Nguyễn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Công Nguyễn</span>
         <span class="rank-rating">2.35</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">243</span>
-        <img src="uploads/1785043831171-995743.jpeg" alt="Huyền Yuri" class="rank-avatar">
+        <img src="img/avatars/1785043831171-995743.webp" alt="Huyền Yuri" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huyền Yuri</span>
         <span class="rank-rating">2.35</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">244</span>
-        <img src="uploads/1785038249548-449348.jpeg" alt="Nguyễn Biên" class="rank-avatar">
+        <img src="img/avatars/1785038249548-449348.webp" alt="Nguyễn Biên" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nguyễn Biên</span>
         <span class="rank-rating">2.35</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">245</span>
-        <img src="uploads/1788863840728-158561.jpeg" alt="Trâm Kaka" class="rank-avatar">
+        <img src="img/avatars/1788863840728-158561.webp" alt="Trâm Kaka" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trâm Kaka</span>
         <span class="rank-rating">2.35</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">246</span>
-        <img src="uploads/1788699236707-769986.jpeg" alt="Út Liều" class="rank-avatar">
+        <img src="img/avatars/1788699236707-769986.webp" alt="Út Liều" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Út Liều</span>
         <span class="rank-rating">2.35</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">247</span>
-        <img src="uploads/1789696160855-233479.jpeg" alt="Đức Huy" class="rank-avatar">
+        <img src="img/avatars/1789696160855-233479.webp" alt="Đức Huy" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đức Huy</span>
         <span class="rank-rating">2.35</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">248</span>
-        <img src="uploads/1785119234658-229881.jpeg" alt="Như Hảo " class="rank-avatar">
+        <img src="img/avatars/1785119234658-229881.webp" alt="Như Hảo " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Như Hảo </span>
         <span class="rank-rating">2.33</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">249</span>
-        <img src="uploads/1787383147827-148150.jpeg" alt="Thanh Xuân" class="rank-avatar">
+        <img src="img/avatars/1787383147827-148150.webp" alt="Thanh Xuân" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thanh Xuân</span>
         <span class="rank-rating">2.33</span>
       </a>
@@ -1793,133 +1802,133 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">251</span>
-        <img src="uploads/1785041144677-149057.jpeg" alt="Hường Lee" class="rank-avatar">
+        <img src="img/avatars/1785041144677-149057.webp" alt="Hường Lee" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hường Lee</span>
         <span class="rank-rating">2.32</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">252</span>
-        <img src="uploads/1787226567874-463996.jpeg" alt="Quang Tú" class="rank-avatar">
+        <img src="img/avatars/1787226567874-463996.webp" alt="Quang Tú" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Quang Tú</span>
         <span class="rank-rating">2.32</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">253</span>
-        <img src="uploads/1789638305941-848059.jpeg" alt="Chí Hưởng" class="rank-avatar">
+        <img src="img/avatars/1789638305941-848059.webp" alt="Chí Hưởng" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Chí Hưởng</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">254</span>
-        <img src="uploads/1787378567996-871658.jpeg" alt="Dàng" class="rank-avatar">
+        <img src="img/avatars/1787378567996-871658.webp" alt="Dàng" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Dàng</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">255</span>
-        <img src="uploads/1785039784093-767899.jpeg" alt="Hoà Derchi" class="rank-avatar">
+        <img src="img/avatars/1785039784093-767899.webp" alt="Hoà Derchi" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoà Derchi</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">256</span>
-        <img src="uploads/1785552768141-435666.jpeg" alt="Hoàng Hiền " class="rank-avatar">
+        <img src="img/avatars/1785552768141-435666.webp" alt="Hoàng Hiền " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoàng Hiền </span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">257</span>
-        <img src="uploads/1785040938905-63480.jpeg" alt="Hoàng Hưng Ngân" class="rank-avatar">
+        <img src="img/avatars/1785040938905-63480.webp" alt="Hoàng Hưng Ngân" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoàng Hưng Ngân</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">258</span>
-        <img src="uploads/1785038679461-386331.jpeg" alt="Hữu Doanh" class="rank-avatar">
+        <img src="img/avatars/1785038679461-386331.webp" alt="Hữu Doanh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hữu Doanh</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">259</span>
-        <img src="uploads/1787281424242-631406.jpeg" alt="Kim Thái " class="rank-avatar">
+        <img src="img/avatars/1787281424242-631406.webp" alt="Kim Thái " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Kim Thái </span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">260</span>
-        <img src="uploads/1785034718961-90396.jpeg" alt="Nam Râu YPP" class="rank-avatar">
+        <img src="img/avatars/1785034718961-90396.webp" alt="Nam Râu YPP" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nam Râu YPP</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">261</span>
-        <img src="uploads/1788796404489-384575.jpeg" alt="Queen TaCa" class="rank-avatar">
+        <img src="img/avatars/1788796404489-384575.webp" alt="Queen TaCa" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Queen TaCa</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">262</span>
-        <img src="uploads/1789455767143-795764.jpeg" alt="Thái Tân" class="rank-avatar">
+        <img src="img/avatars/1789455767143-795764.webp" alt="Thái Tân" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thái Tân</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">263</span>
-        <img src="uploads/1789375031779-457343.jpeg" alt="Vy" class="rank-avatar">
+        <img src="img/avatars/1789375031779-457343.webp" alt="Vy" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Vy</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">264</span>
-        <img src="uploads/1789696238943-438627.jpeg" alt="Văn Toàn" class="rank-avatar">
+        <img src="img/avatars/1789696238943-438627.webp" alt="Văn Toàn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Văn Toàn</span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">265</span>
-        <img src="uploads/1787032414113-86234.jpeg" alt="Đình Tùng " class="rank-avatar">
+        <img src="img/avatars/1787032414113-86234.webp" alt="Đình Tùng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Đình Tùng </span>
         <span class="rank-rating">2.3</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">266</span>
-        <img src="uploads/1787031551834-387699.jpeg" alt="Công Hậu" class="rank-avatar">
+        <img src="img/avatars/1787031551834-387699.webp" alt="Công Hậu" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Công Hậu</span>
         <span class="rank-rating">2.28</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">267</span>
-        <img src="uploads/1788775034408-468725.jpeg" alt="Dũng MMP" class="rank-avatar">
+        <img src="img/avatars/1788775034408-468725.webp" alt="Dũng MMP" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Dũng MMP</span>
         <span class="rank-rating">2.28</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">268</span>
-        <img src="uploads/1785571910442-448259.jpeg" alt="Huỳnh Sơn" class="rank-avatar">
+        <img src="img/avatars/1785571910442-448259.webp" alt="Huỳnh Sơn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huỳnh Sơn</span>
         <span class="rank-rating">2.28</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">269</span>
-        <img src="uploads/1785038089043-542806.jpeg" alt="Kiều Yến " class="rank-avatar">
+        <img src="img/avatars/1785038089043-542806.webp" alt="Kiều Yến " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Kiều Yến </span>
         <span class="rank-rating">2.28</span>
       </a>
@@ -1933,301 +1942,301 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">271</span>
-        <img src="uploads/1787235192412-556461.jpeg" alt="Mr Bình" class="rank-avatar">
+        <img src="img/avatars/1787235192412-556461.webp" alt="Mr Bình" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Mr Bình</span>
         <span class="rank-rating">2.28</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">272</span>
-        <img src="uploads/1789557553640-945013.jpeg" alt="Thanh Tùng" class="rank-avatar">
+        <img src="img/avatars/1789557553640-945013.webp" alt="Thanh Tùng" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thanh Tùng</span>
         <span class="rank-rating">2.28</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">273</span>
-        <img src="uploads/1785040989962-713213.jpeg" alt="Truyền Hưng Ngân" class="rank-avatar">
+        <img src="img/avatars/1785040989962-713213.webp" alt="Truyền Hưng Ngân" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Truyền Hưng Ngân</span>
         <span class="rank-rating">2.28</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">274</span>
-        <img src="uploads/1787281442091-29623.jpeg" alt="Cà Rốt" class="rank-avatar">
+        <img src="img/avatars/1787281442091-29623.webp" alt="Cà Rốt" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Cà Rốt</span>
         <span class="rank-rating">2.27</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">275</span>
-        <img src="uploads/1785930962028-493230.jpeg" alt="Phượng  Hải" class="rank-avatar">
+        <img src="img/avatars/1785930962028-493230.webp" alt="Phượng  Hải" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phượng  Hải</span>
         <span class="rank-rating">2.26</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">276</span>
-        <img src="uploads/1785123441288-320185.jpeg" alt="Hùng Vib " class="rank-avatar">
+        <img src="img/avatars/1785123441288-320185.webp" alt="Hùng Vib " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hùng Vib </span>
         <span class="rank-rating">2.25</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">277</span>
-        <img src="uploads/1785038293459-342272.jpeg" alt="Trung Chiến" class="rank-avatar">
+        <img src="img/avatars/1785038293459-342272.webp" alt="Trung Chiến" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trung Chiến</span>
         <span class="rank-rating">2.25</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">278</span>
-        <img src="uploads/1787226767386-42797.jpeg" alt="Văn Hưởng " class="rank-avatar">
+        <img src="img/avatars/1787226767386-42797.webp" alt="Văn Hưởng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Văn Hưởng </span>
         <span class="rank-rating">2.25</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">279</span>
-        <img src="uploads/1787404816546-525323.jpeg" alt="Hoà Lavie" class="rank-avatar">
+        <img src="img/avatars/1787404816546-525323.webp" alt="Hoà Lavie" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hoà Lavie</span>
         <span class="rank-rating">2.23</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">280</span>
-        <img src="uploads/1785034017445-166303.jpeg" alt="Ngọc Hoà " class="rank-avatar">
+        <img src="img/avatars/1785034017445-166303.webp" alt="Ngọc Hoà " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ngọc Hoà </span>
         <span class="rank-rating">2.23</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">281</span>
-        <img src="uploads/1789375379229-953285.jpeg" alt="Lan Khuê" class="rank-avatar">
+        <img src="img/avatars/1789375379229-953285.webp" alt="Lan Khuê" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lan Khuê</span>
         <span class="rank-rating">2.22</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">282</span>
-        <img src="uploads/1785040231410-438559.jpeg" alt="Phạm Khu" class="rank-avatar">
+        <img src="img/avatars/1785040231410-438559.webp" alt="Phạm Khu" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phạm Khu</span>
         <span class="rank-rating">2.21</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">283</span>
-        <img src="uploads/1785830308305-951792.jpeg" alt="Bảo Quyên" class="rank-avatar">
+        <img src="img/avatars/1785830308305-951792.webp" alt="Bảo Quyên" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Bảo Quyên</span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">284</span>
-        <img src="uploads/1786930756091-927675.jpeg" alt="Duy Phương " class="rank-avatar">
+        <img src="img/avatars/1786930756091-927675.webp" alt="Duy Phương " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Duy Phương </span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">285</span>
-        <img src="uploads/1785912251186-34787.jpeg" alt="Hải Sâm" class="rank-avatar">
+        <img src="img/avatars/1785912251186-34787.webp" alt="Hải Sâm" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Hải Sâm</span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">286</span>
-        <img src="uploads/1785123525071-559682.jpeg" alt="Lê Bắc " class="rank-avatar">
+        <img src="img/avatars/1785123525071-559682.webp" alt="Lê Bắc " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lê Bắc </span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">287</span>
-        <img src="uploads/1785041112761-998692.jpeg" alt="Lê Ngọc" class="rank-avatar">
+        <img src="img/avatars/1785041112761-998692.webp" alt="Lê Ngọc" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lê Ngọc</span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">288</span>
-        <img src="uploads/1785042282334-424377.jpeg" alt="Nga Ng " class="rank-avatar">
+        <img src="img/avatars/1785042282334-424377.webp" alt="Nga Ng " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nga Ng </span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">289</span>
-        <img src="uploads/1785034768968-886251.jpeg" alt="Ngọc Mai " class="rank-avatar">
+        <img src="img/avatars/1785034768968-886251.webp" alt="Ngọc Mai " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ngọc Mai </span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">290</span>
-        <img src="uploads/1785570384820-579994.jpeg" alt="Ngọc ngầu" class="rank-avatar">
+        <img src="img/avatars/1785570384820-579994.webp" alt="Ngọc ngầu" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ngọc ngầu</span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">291</span>
-        <img src="uploads/1785076285250-860469.jpeg" alt="Phương Lady " class="rank-avatar">
+        <img src="img/avatars/1785076285250-860469.webp" alt="Phương Lady " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phương Lady </span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">292</span>
-        <img src="uploads/1787046490042-405600.jpeg" alt="Thuý Võ" class="rank-avatar">
+        <img src="img/avatars/1787046490042-405600.webp" alt="Thuý Võ" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thuý Võ</span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">293</span>
-        <img src="uploads/1787231896970-153234.jpeg" alt="Vũ Long" class="rank-avatar">
+        <img src="img/avatars/1787231896970-153234.webp" alt="Vũ Long" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Vũ Long</span>
         <span class="rank-rating">2.2</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">294</span>
-        <img src="uploads/1785129050177-858544.jpeg" alt="Bình Minh" class="rank-avatar">
+        <img src="img/avatars/1785129050177-858544.webp" alt="Bình Minh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Bình Minh</span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">295</span>
-        <img src="uploads/1787398406015-590182.jpeg" alt="Cầm cà ngọt" class="rank-avatar">
+        <img src="img/avatars/1787398406015-590182.webp" alt="Cầm cà ngọt" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Cầm cà ngọt</span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">296</span>
-        <img src="uploads/1786943471378-334941.jpeg" alt="Kỳ Phong " class="rank-avatar">
+        <img src="img/avatars/1786943471378-334941.webp" alt="Kỳ Phong " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Kỳ Phong </span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">297</span>
-        <img src="uploads/1785127531848-731839.jpeg" alt="La" class="rank-avatar">
+        <img src="img/avatars/1785127531848-731839.webp" alt="La" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">La</span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">298</span>
-        <img src="uploads/1785893736992-704834.jpeg" alt="Lê Thiết " class="rank-avatar">
+        <img src="img/avatars/1785893736992-704834.webp" alt="Lê Thiết " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Lê Thiết </span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">299</span>
-        <img src="uploads/1787383166405-232445.jpeg" alt="Ngọc Lanh" class="rank-avatar">
+        <img src="img/avatars/1787383166405-232445.webp" alt="Ngọc Lanh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ngọc Lanh</span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">300</span>
-        <img src="uploads/1789660145414-20648.jpeg" alt="Ngọc Thuý" class="rank-avatar">
+        <img src="img/avatars/1789660145414-20648.webp" alt="Ngọc Thuý" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Ngọc Thuý</span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">301</span>
-        <img src="uploads/1787408272624-625381.jpeg" alt="Sin " class="rank-avatar">
+        <img src="img/avatars/1787408272624-625381.webp" alt="Sin " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Sin </span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">302</span>
-        <img src="uploads/1785034042606-84082.jpeg" alt="Thuý YPP" class="rank-avatar">
+        <img src="img/avatars/1785034042606-84082.webp" alt="Thuý YPP" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Thuý YPP</span>
         <span class="rank-rating">2.18</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">303</span>
-        <img src="uploads/1786894542690-986387.jpeg" alt="Sao Mai" class="rank-avatar">
+        <img src="img/avatars/1786894542690-986387.webp" alt="Sao Mai" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Sao Mai</span>
         <span class="rank-rating">2.15</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">304</span>
-        <img src="uploads/1787187260750-636382.jpeg" alt="Trang Trịnh" class="rank-avatar">
+        <img src="img/avatars/1787187260750-636382.webp" alt="Trang Trịnh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trang Trịnh</span>
         <span class="rank-rating">2.15</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">305</span>
-        <img src="uploads/1789375149510-478388.jpeg" alt="Linh Linh" class="rank-avatar">
+        <img src="img/avatars/1789375149510-478388.webp" alt="Linh Linh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Linh Linh</span>
         <span class="rank-rating">2.13</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">306</span>
-        <img src="uploads/1787383450440-134597.jpeg" alt="Nhung Nguyễn" class="rank-avatar">
+        <img src="img/avatars/1787383450440-134597.webp" alt="Nhung Nguyễn" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Nhung Nguyễn</span>
         <span class="rank-rating">2.13</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">307</span>
-        <img src="uploads/1789260813792-813955.jpeg" alt="Phương Mập " class="rank-avatar">
+        <img src="img/avatars/1789260813792-813955.webp" alt="Phương Mập " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Phương Mập </span>
         <span class="rank-rating">2.13</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">308</span>
-        <img src="uploads/1786894574721-118169.jpeg" alt="Trang Huỳnh " class="rank-avatar">
+        <img src="img/avatars/1786894574721-118169.webp" alt="Trang Huỳnh " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Trang Huỳnh </span>
         <span class="rank-rating">2.12</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">309</span>
-        <img src="uploads/1787307674811-376780.jpeg" alt="Anh Bải" class="rank-avatar">
+        <img src="img/avatars/1787307674811-376780.webp" alt="Anh Bải" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Anh Bải</span>
         <span class="rank-rating">2.1</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">310</span>
-        <img src="uploads/1789260838345-297059.jpeg" alt="Bích Ngọc" class="rank-avatar">
+        <img src="img/avatars/1789260838345-297059.webp" alt="Bích Ngọc" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Bích Ngọc</span>
         <span class="rank-rating">2.08</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">311</span>
-        <img src="uploads/1786894914071-643590.jpeg" alt="Mai Nghi " class="rank-avatar">
+        <img src="img/avatars/1786894914071-643590.webp" alt="Mai Nghi " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Mai Nghi </span>
         <span class="rank-rating">2.08</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">312</span>
-        <img src="uploads/1787363476541-507847.jpeg" alt="Oanh" class="rank-avatar">
+        <img src="img/avatars/1787363476541-507847.webp" alt="Oanh" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Oanh</span>
         <span class="rank-rating">2.08</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">313</span>
-        <img src="uploads/1786894742412-562599.jpeg" alt="Wendy Tạ " class="rank-avatar">
+        <img src="img/avatars/1786894742412-562599.webp" alt="Wendy Tạ " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Wendy Tạ </span>
         <span class="rank-rating">2.08</span>
       </a>
@@ -2241,21 +2250,21 @@
     
       <a href="#" class="rank-row ">
         <span class="rank-no">315</span>
-        <img src="uploads/1785565924295-4929.jpeg" alt="Kim Kim" class="rank-avatar">
+        <img src="img/avatars/1785565924295-4929.webp" alt="Kim Kim" class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Kim Kim</span>
         <span class="rank-rating">2.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">316</span>
-        <img src="uploads/1785565170379-905448.jpeg" alt="Tuyết Trần " class="rank-avatar">
+        <img src="img/avatars/1785565170379-905448.webp" alt="Tuyết Trần " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Tuyết Trần </span>
         <span class="rank-rating">2.0</span>
       </a>
     
       <a href="#" class="rank-row ">
         <span class="rank-no">317</span>
-        <img src="uploads/1785567084603-824275.jpeg" alt="Huỳnh Thảo " class="rank-avatar">
+        <img src="img/avatars/1785567084603-824275.webp" alt="Huỳnh Thảo " class="rank-avatar" width="104" height="104" loading="lazy" decoding="async">
         <span class="rank-name">Huỳnh Thảo </span>
         <span class="rank-rating">1.98</span>
       </a>
